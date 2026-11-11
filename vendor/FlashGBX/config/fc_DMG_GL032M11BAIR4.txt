@@ -1,0 +1,99 @@
+{
+	"type":"DMG",
+	"names":[
+		"SD007_48BALL_64M with GL032M11BAIR4",
+		"SD007_48BALL_64M_V2 with GL032M11BAIR4",
+		"S29GL032N90T and ALTERA CPLD (MBC5)",
+		"29LV320TE and ALTERA CPLD (no PCB text)",
+		"SD007_TSOP_64BALL_SOP28_V2 with unlabeled flash chip"
+	],
+	"flash_ids":[
+		[ 0x02, 0x02, 0x7D, 0x7D ],
+		[ 0x02, 0x02, 0x7D, 0x7D ],
+		[ 0x02, 0x02, 0x7D, 0x7D ],
+		[ 0x04, 0x04, 0xF5, 0xF5 ],
+		[ 0x02, 0x02, 0x7D, 0x7D ]
+	],
+	"voltage":3.3,
+	"flash_size":0x400000,
+	"start_addr":0x4000,
+	"first_bank":0,
+	"write_pin":"WR",
+	"sector_size_from_cfi":true,
+	"chip_erase_timeout":120,
+	"mbc":0x1B,
+	"command_set":"AMD",
+	"commands":{
+		"reset":[
+			[ 0x4000, 0xF0 ]
+		],
+		"read_identifier":[
+			[ 0x4AAA, 0xA9 ],
+			[ 0x4555, 0x56 ],
+			[ 0x4AAA, 0x90 ]
+		],
+		"read_cfi":[
+			[ 0x4AAA, 0x98 ]
+		],
+		"chip_erase":[
+			[ 0x4AAA, 0xA9 ],
+			[ 0x4555, 0x56 ],
+			[ 0x4AAA, 0x80 ],
+			[ 0x4AAA, 0xA9 ],
+			[ 0x4555, 0x56 ],
+			[ 0x4AAA, 0x10 ]
+		],
+		"chip_erase_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ 0, 0xFF, 0xFF ]
+		],
+		"sector_erase":[
+			[ 0x4AAA, 0xA9 ],
+			[ 0x4555, 0x56 ],
+			[ 0x4AAA, 0x80 ],
+			[ 0x4AAA, 0xA9 ],
+			[ 0x4555, 0x56 ],
+			[ "SA", 0x30 ]
+		],
+		"sector_erase_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ "SA", 0xFF, 0xFF ]
+		],
+		"buffer_write":[
+			[ 0x4AAA, 0xA9 ],
+			[ 0x4555, 0x56 ],
+			[ "SA", 0x26 ],
+			[ "SA", "BS" ],
+			[ "PA", "PD" ],
+			[ "SA", 0x2A ]
+		],
+		"buffer_write_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ "SA", "PD", 0xFFFF ]
+		],
+		"single_write":[
+			[ 0x4AAA, 0xA9 ],
+			[ 0x4555, 0x56 ],
+			[ 0x4AAA, 0xA0 ],
+			[ "PA", "PD" ]
+		],
+		"single_write_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ]
+		]
+	}
+}

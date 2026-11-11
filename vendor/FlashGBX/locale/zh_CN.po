@@ -1,0 +1,5024 @@
+# FlashGBX
+# © 2020–2026 Lesserkuma
+# This file is distributed under the same license as the FlashGBX package.
+# https://github.com/Lesserkuma/FlashGBX
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FlashGBX v5.0\n"
+"Report-Msgid-Bugs-To: https://github.com/orzgithub/FlashGBX/issues\n"
+"POT-Creation-Date: 2026-06-09 20:05+0800\n"
+"PO-Revision-Date: 2026-06-09 22:16+0200\n"
+"Last-Translator: ZaindORp\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.8\n"
+
+#: ../package/FlashGBX/CartridgeTypes.py:32
+#: ../package/FlashGBX/CartridgeTypes.py:172
+#: ../package/FlashGBX/CartridgeTypes.py:323
+#: ../package/FlashGBX/Flashcart.py:628 ../package/FlashGBX/Flashcart.py:640
+#: ../package/FlashGBX/Flashcart.py:642
+msgid " Bytes"
+msgstr " 字节"
+
+#: ../package/FlashGBX/CartridgeTypes.py:33
+#: ../package/FlashGBX/CartridgeTypes.py:173
+#: ../package/FlashGBX/CartridgeTypes.py:324
+#: ../package/FlashGBX/FlashGBX_CLI.py:1081
+msgid " KiB"
+msgstr " KiB"
+
+#: ../package/FlashGBX/CartridgeTypes.py:34
+#: ../package/FlashGBX/CartridgeTypes.py:174
+#: ../package/FlashGBX/CartridgeTypes.py:325
+#: ../package/FlashGBX/FlashGBX_CLI.py:955
+#: ../package/FlashGBX/FlashGBX_CLI.py:1078
+#: ../package/FlashGBX/FlashGBX_GUI.py:2090
+#: ../package/FlashGBX/Flashcart.py:624
+msgid " MiB"
+msgstr " MiB"
+
+#: ../package/FlashGBX/CartridgeTypes.py:148
+#: ../package/FlashGBX/CartridgeTypes.py:162
+msgctxt "Game Data"
+msgid "Unknown"
+msgstr "未知"
+
+#: ../package/FlashGBX/CartridgeTypes.py:166
+msgctxt "Save Type"
+msgid "None"
+msgstr "无"
+
+#: ../package/FlashGBX/CartridgeTypes.py:191
+#: ../package/FlashGBX/CartridgeTypes.py:240
+msgid "None"
+msgstr "无"
+
+#: ../package/FlashGBX/CartridgeTypes.py:205
+msgctxt "Save Type"
+msgid "Unknown"
+msgstr "未知"
+
+#: ../package/FlashGBX/CartridgeTypes.py:299
+#: ../package/FlashGBX/CartridgeTypes.py:317
+msgid "Unknown Save Type"
+msgstr "未知存档类型"
+
+#: ../package/FlashGBX/DataTransfer.py:47
+msgid ""
+"The USB connection was lost during a transfer. Try different USB cables, "
+"reconnect the device, restart the software and try again."
+msgstr ""
+"传输过程中 USB 连接丢失。请尝试使用不同的 USB 数据线、重新连接设备、重启软件"
+"后再试。"
+
+#: ../package/FlashGBX/DataTransfer.py:66
+msgid ""
+"An unresolvable error has occured. See the debug log file for more "
+"information. Reconnect the device, restart the software and try again."
+msgstr ""
+"发生了一个无法解决的错误。详情请参阅调试日志文件。请重新连接设备、重启软件后"
+"再试。"
+
+#: ../package/FlashGBX/FlashGBX.py:36
+#, python-brace-format
+msgid ""
+"No flashcart profile files found in {config_path}. Resetting configuration..."
+msgstr "在 {config_path} 中未找到烧录卡配置文件。正在重置配置..."
+
+#: ../package/FlashGBX/FlashGBX.py:42
+msgid "All configuration has been reset."
+msgstr "所有配置已重置。"
+
+#: ../package/FlashGBX/FlashGBX.py:78
+msgid "Warning: config.zip is corrupted and could not be read."
+msgstr "警告：config.zip 已损坏，无法读取。"
+
+#: ../package/FlashGBX/FlashGBX.py:81
+msgid ""
+"The application was recently updated and some flashcart profile files have "
+"been updated as well. You will find backup copies of them in your "
+"configuration directory."
+msgstr ""
+"应用程序最近已更新，部分烧录卡配置文件也已更新。你可以在配置目录中找到它们的"
+"备份副本。"
+
+#: ../package/FlashGBX/FlashGBX.py:81
+msgid "Updated files:"
+msgstr "已更新的文件："
+
+#: ../package/FlashGBX/FlashGBX.py:84
+#, python-brace-format
+msgid ""
+"Warning: {config_zip_file} not found. This is required to load new flashcart "
+"profile configurations after updating."
+msgstr "警告：未找到 {config_zip_file}。更新后需要此文件来加载新的烧录卡配置。"
+
+#: ../package/FlashGBX/FlashGBX.py:160
+msgid "Examples"
+msgstr "示例"
+
+#: ../package/FlashGBX/FlashGBX.py:161
+msgid "Backup the ROM of a Game Boy Advance cartridge"
+msgstr "备份 Game Boy Advance 卡带的 ROM"
+
+#: ../package/FlashGBX/FlashGBX.py:162
+msgid "Backup Save Data from a Game Boy cartridge"
+msgstr "备份 Game Boy 卡带的存档数据"
+
+#: ../package/FlashGBX/FlashGBX.py:163
+msgid ""
+"Write a Game Boy Advance ROM relying on auto-detecting the flash cartridge"
+msgstr "写入 Game Boy Advance ROM，依赖自动检测烧录卡"
+
+#: ../package/FlashGBX/FlashGBX.py:164
+msgid "Extract Game Boy Camera pictures as .png files from a save data file"
+msgstr "从存档文件中提取 Game Boy Camera 图片并保存为 .png 文件"
+
+#: ../package/FlashGBX/FlashGBX.py:165
+#, python-brace-format
+msgid ""
+"Backup a {gb_memory_cartridge} ROM including its hidden sector .map file"
+msgstr "备份 {gb_memory_cartridge} 的 ROM，包含其隐藏扇区 .map 文件"
+
+#: ../package/FlashGBX/FlashGBX.py:170
+msgctxt "Command Line Arguments Category"
+msgid "General arguments"
+msgstr "通用参数"
+
+#: ../package/FlashGBX/FlashGBX.py:173
+msgctxt "Command Line Help"
+msgid "force command line interface mode"
+msgstr "强制使用命令行界面模式"
+
+#: ../package/FlashGBX/FlashGBX.py:174
+msgctxt "Command Line Help"
+msgid "clears all settings such as last used directory information"
+msgstr "清除所有设置，例如上次使用的目录信息"
+
+#: ../package/FlashGBX/FlashGBX.py:175
+msgctxt "Command Line Help"
+msgid "enable debug messages used for development"
+msgstr "启用用于开发的调试消息"
+
+#: ../package/FlashGBX/FlashGBX.py:176
+msgctxt "Command Line Help"
+msgid "sets the language of the program (e.g. “auto”, “en”, “de”, ...)"
+msgstr "设置程序语言（例如“auto”、“en”、“zh”，...）"
+
+#: ../package/FlashGBX/FlashGBX.py:179
+msgctxt "Command Line Arguments Category"
+msgid "Configuration arguments"
+msgstr "配置参数"
+
+#: ../package/FlashGBX/FlashGBX.py:180
+#, python-brace-format
+msgctxt "Configuration Help"
+msgid ""
+"sets the config directory to either the OS-provided local app config "
+"directory ({appdata}), or a subdirectory of this application ({subdir})"
+msgstr ""
+"将配置目录设置为操作系统提供的本地应用配置目录（{appdata}），或此应用程序的子"
+"目录（{subdir}）"
+
+#: ../package/FlashGBX/FlashGBX.py:182
+msgctxt "Command Line Arguments Category"
+msgid "Main command line interface arguments"
+msgstr "主要命令行参数"
+
+#: ../package/FlashGBX/FlashGBX.py:183
+msgctxt "Command Line Help"
+msgid "set platform to “dmg” (Game Boy) or “agb” (Game Boy Advance)"
+msgstr "设置平台为“dmg”（Game Boy）或“agb”（Game Boy Advance）"
+
+#: ../package/FlashGBX/FlashGBX.py:184
+msgctxt "Command Line Help"
+msgid "select program action"
+msgstr "选择程序操作"
+
+#: ../package/FlashGBX/FlashGBX.py:185
+msgctxt "Command Line Help"
+msgid "overwrite without asking if target file already exists"
+msgstr "若目标文件已存在则直接覆盖，不询问"
+
+#: ../package/FlashGBX/FlashGBX.py:186
+msgctxt "Command Line Help"
+msgid ""
+"target or source file path (optional when reading, required when writing)"
+msgstr "目标或源文件路径（读取时可选，写入时必须）"
+
+#: ../package/FlashGBX/FlashGBX.py:188
+msgctxt "Command Line Arguments Category"
+msgid "Optional command line interface arguments"
+msgstr "可选命令行参数"
+
+#: ../package/FlashGBX/FlashGBX.py:189
+msgctxt "Command Line Help"
+msgid "set size of Game Boy cartridge ROM data"
+msgstr "设置 Game Boy 卡带 ROM 数据大小"
+
+#: ../package/FlashGBX/FlashGBX.py:190
+msgctxt "Command Line Help"
+msgid "set mapper type of Game Boy cartridge"
+msgstr "设置 Game Boy 卡带的 mapper 类型"
+
+#: ../package/FlashGBX/FlashGBX.py:191
+msgctxt "Command Line Help"
+msgid "set type of Game Boy cartridge save data"
+msgstr "设置 Game Boy 卡带存档数据类型"
+
+#: ../package/FlashGBX/FlashGBX.py:192
+msgctxt "Command Line Help"
+msgid "set size of Game Boy Advance cartridge ROM data"
+msgstr "设置 Game Boy Advance 卡带 ROM 数据大小"
+
+#: ../package/FlashGBX/FlashGBX.py:193
+msgctxt "Command Line Help"
+msgid "set type of Game Boy Advance cartridge save data"
+msgstr "设置 Game Boy Advance 卡带存档数据类型"
+
+#: ../package/FlashGBX/FlashGBX.py:194
+#, python-brace-format
+msgctxt "Command Line Help"
+msgid ""
+"Location of Batteryless SRAM data in ROM (e.g. 0xFC0000); only with "
+"“{dmg_savetype_batteryless}” or “{agb_savetype_batteryless}”)"
+msgstr ""
+"ROM 中无电池 SRAM 数据的位置（例如 0xFC0000）；仅"
+"与“{dmg_savetype_batteryless}”或“{agb_savetype_batteryless}”一起使用"
+
+#: ../package/FlashGBX/FlashGBX.py:195
+msgctxt "Command Line Help"
+msgid "Size of Batteryless SRAM data in ROM (e.g. 0x10000)"
+msgstr "ROM 中无电池 SRAM 数据的大小（例如 0x10000）"
+
+#: ../package/FlashGBX/FlashGBX.py:196
+msgctxt "Command Line Help"
+msgid ""
+"Bank layout of Batteryless SRAM data for DMG mode: 0=continuous, 1=first "
+"half of ROM bank, 2=second half"
+msgstr ""
+"DMG 模式下无电池 SRAM 数据的 Bank 布局：0=连续，1=ROM Bank 的前半部分，2=后半"
+"部分"
+
+#: ../package/FlashGBX/FlashGBX.py:197
+msgctxt "Command Line Help"
+msgid "store RTC register values if supported"
+msgstr "若支持则存储实时时钟寄存器值"
+
+#: ../package/FlashGBX/FlashGBX.py:198
+msgctxt "Command Line Help"
+msgid "keep existing calibration data of the e-Reader when writing save data"
+msgstr "写入存档数据时保留 e-Reader 现有的校准数据"
+
+#: ../package/FlashGBX/FlashGBX.py:199
+msgctxt "Command Line Help"
+msgid "don’t stop if invalid data found in cartridge header data"
+msgstr "若在卡带头数据中发现无效数据时不停止"
+
+#: ../package/FlashGBX/FlashGBX.py:200
+msgctxt "Command Line Help"
+msgid "name of flash cart profile; see .txt files in config directory"
+msgstr "烧录卡配置文件名；请参阅配置目录中的 .txt 文件"
+
+#: ../package/FlashGBX/FlashGBX.py:201
+msgctxt "Command Line Help"
+msgid "prefer full chip erase over sector erase when both available"
+msgstr "当两者都可用时，优先使用全芯片擦除而非扇区擦除"
+
+#: ../package/FlashGBX/FlashGBX.py:202
+msgctxt "Command Line Help"
+msgid "force 5V when writing Game Boy flash cartridges"
+msgstr "写入 Game Boy 烧录卡时强制使用 5V"
+
+#: ../package/FlashGBX/FlashGBX.py:203
+msgctxt "Command Line Help"
+msgid "do not verify written data"
+msgstr "不验证写入的数据"
+
+#: ../package/FlashGBX/FlashGBX.py:204
+msgctxt "Command Line Help"
+msgid "generate a dump report for a ROM backup"
+msgstr "为 ROM 备份生成转储报告"
+
+#: ../package/FlashGBX/FlashGBX.py:205
+msgctxt "Command Line Help"
+msgid "adds a timestamp to the file name of save data backups"
+msgstr "为存档备份文件名添加时间戳"
+
+#: ../package/FlashGBX/FlashGBX.py:206
+msgctxt "Command Line Help"
+msgid "sets the color palette of pictures extracted from Game Boy Camera saves"
+msgstr "设置从 Game Boy Camera 存档中提取的图片的调色板"
+
+#: ../package/FlashGBX/FlashGBX.py:207
+msgctxt "Command Line Help"
+msgid ""
+"sets the file format of saved pictures extracted from Game Boy Camera saves"
+msgstr "设置从 Game Boy Camera 存档中提取的图片的保存格式"
+
+#: ../package/FlashGBX/FlashGBX.py:208
+msgctxt "Command Line Help"
+msgid ""
+"automatically extract Game Boy Camera pictures after backing up save data"
+msgstr "备份存档后自动提取 Game Boy Camera 图片"
+
+#: ../package/FlashGBX/FlashGBX.py:209
+msgctxt "Command Line Help"
+msgid "override device port"
+msgstr "覆盖设备端口"
+
+#: ../package/FlashGBX/FlashGBX.py:210
+msgctxt "Command Line Help"
+msgid "limit connection to a slower baud rate"
+msgstr "将连接限制在较低的波特率"
+
+#: ../package/FlashGBX/FlashGBX.py:211
+msgctxt "Command Line Help"
+msgid ""
+"compare sectors and only write those that differ when writing a ROM (only "
+"for flash carts that support this feature)"
+msgstr "写入 ROM 时比较扇区，仅写入有差异的部分（仅适用于支持此功能的烧录卡）"
+
+#: ../package/FlashGBX/FlashGBX.py:212
+msgctxt "Command Line Help"
+msgid "wait for key press after the program has ended"
+msgstr "程序结束后等待按键"
+
+#: ../package/FlashGBX/FlashGBX.py:218 ../package/FlashGBX/FlashGBX.py:252
+#: ../package/FlashGBX/FlashGBX.py:284 ../package/FlashGBX/FlashGBX.py:297
+msgid "Press ENTER to exit."
+msgstr "按回车键退出。"
+
+#: ../package/FlashGBX/FlashGBX.py:242
+#, python-brace-format
+msgid ""
+"Error: This program has no permission to use the configuration directory "
+"“{config_path}”!"
+msgstr "错误：此程序无权使用配置目录“{config_path}”！"
+
+#: ../package/FlashGBX/FlashGBX.py:244
+#, python-brace-format
+msgid "Use directory “{appdata_folder}” instead?"
+msgstr "是否改用目录“{appdata_folder}”？"
+
+#: ../package/FlashGBX/FlashGBX.py:275
+msgid ""
+"Note: GUI mode couldn’t be launched, but the application can be run in CLI "
+"mode."
+msgstr "注意：无法启动 GUI 模式，但应用程序可以在 CLI 模式下运行。"
+
+#: ../package/FlashGBX/FlashGBX.py:275
+msgid "Optional command line switches are explained above."
+msgstr "可选命令行开关如上所述。"
+
+#: ../package/FlashGBX/FlashGBX.py:278
+msgid "Falling back to CLI mode."
+msgstr "回退到 CLI 模式。"
+
+#: ../package/FlashGBX/FlashGBX.py:283 ../package/FlashGBX/FlashGBX.py:296
+msgid "Program stopped."
+msgstr "程序已停止。"
+
+#: ../package/FlashGBX/FlashGBX.py:291
+msgid "Now running in CLI mode."
+msgstr "现在以 CLI 模式运行。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:57
+#: ../package/FlashGBX/FlashGBX_CLI.py:227
+#: ../package/FlashGBX/FlashGBX_CLI.py:243
+msgid "Game Boy or Game Boy Color"
+msgstr "Game Boy 或 Game Boy Color"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:58
+#: ../package/FlashGBX/FlashGBX_CLI.py:228
+#: ../package/FlashGBX/FlashGBX_CLI.py:246
+#: ../package/FlashGBX/FlashGBX_GUI.py:3230
+msgid "Game Boy Advance"
+msgstr "Game Boy Advance"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:90
+msgid "Configuration folder:"
+msgstr "配置文件夹："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:93
+msgid "Read Cartridge Information"
+msgstr "读取卡带信息"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:94
+#: ../package/FlashGBX/FlashGBX_GUI.py:1974
+#: ../package/FlashGBX/FlashGBX_GUI.py:1984
+#: ../package/FlashGBX/FlashGBX_GUI.py:3977
+msgid "Backup ROM"
+msgstr "备份 ROM"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:95
+#: ../package/FlashGBX/FlashGBX_GUI.py:2072
+#: ../package/FlashGBX/FlashGBX_GUI.py:2074
+#: ../package/FlashGBX/FlashGBX_GUI.py:3979
+msgid "Write ROM"
+msgstr "写入 ROM"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:96
+#: ../package/FlashGBX/FlashGBX_GUI.py:3983
+msgid "Backup Save Data"
+msgstr "备份存档"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:97
+#: ../package/FlashGBX/FlashGBX_GUI.py:2507
+msgid "Restore Save Data"
+msgstr "恢复存档"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:98
+msgid "Erase Save Data"
+msgstr "擦除存档"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:99
+msgid "Extract Game Boy Camera Pictures From Existing Save Data Backup"
+msgstr "从现有存档备份中提取 Game Boy Camera 图片"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:100
+#: ../package/FlashGBX/InteractiveConsole.py:18
+#: ../package/FlashGBX/InteractiveConsoleWindow.py:19
+msgid "Interactive Console"
+msgstr "交互控制台"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:108
+#, python-brace-format
+msgid "Firmware Update for {device_name}"
+msgstr "{device_name} 固件更新"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:126
+msgid "Select Operation:"
+msgstr "选择操作："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:131
+#: ../package/FlashGBX/FlashGBX_CLI.py:230
+#, python-brace-format
+msgid "Enter number ({range}) [{default}]:"
+msgstr "输入数字（{range}）[{default}]："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:134
+#: ../package/FlashGBX/FlashGBX_CLI.py:141
+#: ../package/FlashGBX/FlashGBX_CLI.py:174
+#: ../package/FlashGBX/FlashGBX_CLI.py:237
+#: ../package/FlashGBX/FlashGBX_CLI.py:286
+#: ../package/FlashGBX/FlashGBX_CLI.py:302
+#: ../package/FlashGBX/FlashGBX_CLI.py:977
+#: ../package/FlashGBX/FlashGBX_CLI.py:1098
+#: ../package/FlashGBX/FlashGBX_CLI.py:1212
+#: ../package/FlashGBX/FlashGBX_CLI.py:1326
+#: ../package/FlashGBX/FlashGBX_CLI.py:1333
+#: ../package/FlashGBX/FlashGBX_CLI.py:1340
+#: ../package/FlashGBX/FlashGBX_CLI.py:1545
+#: ../package/FlashGBX/FlashGBX_CLI.py:1569
+#: ../package/FlashGBX/FlashGBX_CLI.py:1581
+#: ../package/FlashGBX/FlashGBX_CLI.py:1591
+#: ../package/FlashGBX/FlashGBX_CLI.py:1668
+#: ../package/FlashGBX/FlashGBX_CLI.py:1690
+#: ../package/FlashGBX/FlashGBX_CLI.py:1716
+#: ../package/FlashGBX/FlashGBX_CLI.py:1763
+#: ../package/FlashGBX/FlashGBX_CLI.py:1789
+#: ../package/FlashGBX/FlashGBX_CLI.py:1841
+#: ../package/FlashGBX/FlashGBX_CLI.py:1877
+msgid "Canceled."
+msgstr "已取消。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:148
+#: ../package/FlashGBX/FlashGBX_CLI.py:1701
+#: ../package/FlashGBX/FlashGBX_GUI.py:1608
+msgid "No devices found."
+msgstr "未找到设备。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:152
+msgid "Couldn’t connect to the device."
+msgstr "无法连接到设备。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:158
+msgid ""
+"The current firmware version of your device is not supported.\n"
+"Please update to a supported firmware version first."
+msgstr ""
+"当前设备的固件版本不受支持。\n"
+"请先更新到受支持的固件版本。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:162
+#: ../package/FlashGBX/FlashGBX_CLI.py:164
+#: ../package/FlashGBX/FlashGBX_GUI.py:1263
+#: ../package/FlashGBX/FlashGBX_GUI.py:1430
+#, python-brace-format
+msgid "Connected to {device_name}"
+msgstr "已连接到 {device_name}"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:171
+msgid "Enter file path of Game Boy Camera save data file:"
+msgstr "输入 Game Boy Camera 存档文件路径："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:182
+#: ../package/FlashGBX/FlashGBX_CLI.py:494
+#: ../package/FlashGBX/FlashGBX_CLI.py:516
+#, python-brace-format
+msgid "Can’t save pictures at location “{path}”."
+msgstr "无法将图片保存到“{path}”。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:189
+#, python-brace-format
+msgid "The pictures from “{save_file}” were extracted to “{destination}”."
+msgstr "来自“{save_file}”的图片已提取到“{destination}”。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:191
+msgid "Couldn’t parse the save data file."
+msgstr "无法解析存档文件。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:210
+msgid "The connected device does not support any platform modes."
+msgstr "连接的设备不支持任何平台模式。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:215
+#, python-brace-format
+msgid "Using only supported platform: {platform}"
+msgstr "仅使用受支持的平台：{platform}"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:220
+#, python-brace-format
+msgid "Using platform mode set by cartridge mode switch: {platform}"
+msgstr "使用卡带模式开关设置的平台模式：{platform}"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:222
+#, python-brace-format
+msgid "Using platform mode: {platform}"
+msgstr "使用平台模式：{platform}"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:226
+msgid "Select Platform:"
+msgstr "选择平台："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:243
+#: ../package/FlashGBX/FlashGBX_CLI.py:246
+#, python-brace-format
+msgid "Platform: {platform}"
+msgstr "平台：{platform}"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:254
+#: ../package/FlashGBX/FlashGBX_CLI.py:311
+#: ../package/FlashGBX/FlashGBX_CLI.py:375
+msgid "Operation stopped."
+msgstr "操作已停止。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:261
+msgid "Couldn’t read cartridge header. Please try again."
+msgstr "无法读取卡带头。请重试。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:265
+#, python-brace-format
+msgid ""
+"Invalid data was detected which usually means that the cartridge couldn’t be "
+"read correctly. Please make sure you selected the correct platform and that "
+"the cartridge contacts are clean. This check can be disabled with the "
+"command line switch “{switch}”."
+msgstr ""
+"检测到无效数据，这通常表示无法正确读取卡带。请确保选择了正确的平台，并且卡带"
+"触点干净。可以使用命令行开关“{switch}”禁用此检查。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:266
+#: ../package/FlashGBX/FlashGBX_CLI.py:271
+msgid "Cartridge Information:"
+msgstr "卡带信息："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:283
+msgid "Enter file path of save data file:"
+msgstr "输入存档文件路径："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:299
+msgid "Enter file path of ROM file:"
+msgstr "输入 ROM 文件路径："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:320
+msgid "Press ENTER to continue."
+msgstr "按回车键继续。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:354
+msgid "The newly written ROM data will now be checked for errors."
+msgstr "现在将检查新写入的 ROM 数据是否有错误。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:356
+msgid "The newly written save data will now be checked for errors."
+msgstr "现在将检查新写入的存档数据是否有错误。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:358
+#, python-brace-format
+msgid ""
+"Please wait while the flash chip is being erased... (Elapsed time: "
+"{elapsed_time})"
+msgstr "请等待，正在擦除闪存芯片...（已用时间：{elapsed_time}）"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:360
+#, python-brace-format
+msgid ""
+"Please wait while the flash chip is being unlocked... (Elapsed time: "
+"{elapsed_time})"
+msgstr "请等待，正在解锁闪存芯片...（已用时间：{elapsed_time}）"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:362
+#, python-brace-format
+msgid "Erasing flash sector at address {address}..."
+msgstr "正在擦除地址 {address} 处的闪存扇区..."
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:364
+#: ../package/FlashGBX/FlashGBX_GUI.py:4050
+msgid "Updating Real Time Clock..."
+msgstr "正在更新实时时钟..."
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:370
+msgid "Stopping..."
+msgstr "正在停止..."
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:389
+#: ../package/FlashGBX/FlashGBX_CLI.py:411
+#: ../package/FlashGBX/FlashGBX_GUI.py:1668
+#: ../package/FlashGBX/FlashGBX_GUI.py:4153
+msgid " KiB/s"
+msgstr " KiB/秒"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:389
+msgctxt "Estimated Time abbreviation (3 characters)"
+msgid "ETA"
+msgstr "预计"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:417
+#: ../package/FlashGBX/FlashGBX_GUI.py:1881
+msgid "The ROM was written and verified successfully!"
+msgstr "ROM 已成功写入并验证通过！"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:425
+#: ../package/FlashGBX/FlashGBX_GUI.py:1845
+msgctxt "Shortened list of Broken Sectors (e.g. 0x0000~0x07FF and others)"
+msgid "and others"
+msgstr "及其他"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:428
+#: ../package/FlashGBX/FlashGBX_GUI.py:1848
+#, python-brace-format
+msgid ""
+"The ROM was written completely, but verification of written data failed in "
+"the following sector: {sectors}."
+msgid_plural ""
+"The ROM was written completely, but verification of written data failed in "
+"the following sectors: {sectors}."
+msgstr[0] "ROM 已完整写入，但以下扇区中的数据验证失败：{sectors}。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:431
+#: ../package/FlashGBX/FlashGBX_GUI.py:1883
+msgid "ROM writing complete!"
+msgstr "ROM 写入完成！"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:452
+#: ../package/FlashGBX/FlashGBX_GUI.py:1698
+msgid "Error:"
+msgstr "错误："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:458
+#: ../package/FlashGBX/FlashGBX_CLI.py:473
+#: ../package/FlashGBX/FlashGBX_GUI.py:1709
+#: ../package/FlashGBX/FlashGBX_GUI.py:1755
+msgid "The ROM backup is complete and the checksum was verified successfully!"
+msgstr "ROM 备份已完成，校验和验证成功！"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:460
+msgid "The ROM backup is complete!"
+msgstr "ROM 备份已完成！"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:462
+#: ../package/FlashGBX/FlashGBX_GUI.py:1721
+msgid "The ROM was dumped, but the checksum is not correct."
+msgstr "ROM 已转储，但校验和不正确。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:464
+#: ../package/FlashGBX/FlashGBX_CLI.py:477
+#: ../package/FlashGBX/FlashGBX_CLI.py:484
+#: ../package/FlashGBX/FlashGBX_GUI.py:1724
+#: ../package/FlashGBX/FlashGBX_GUI.py:1764
+#: ../package/FlashGBX/FlashGBX_GUI.py:1776
+#, python-brace-format
+msgid ""
+"A data loop was detected in the ROM backup at position {pos} ({size}). This "
+"may indicate a bad dump or overdump."
+msgstr ""
+"在 ROM 备份的位置 {pos}（{size}）处检测到数据循环。这可能表示转储错误或过度转"
+"储。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:466
+#: ../package/FlashGBX/FlashGBX_CLI.py:479
+#: ../package/FlashGBX/FlashGBX_GUI.py:1726
+#: ../package/FlashGBX/FlashGBX_GUI.py:1766
+msgid ""
+"This may indicate a bad dump, however this can be normal for some "
+"reproduction cartridges, unlicensed games, prototypes, patched games and "
+"intentional overdumps."
+msgstr ""
+"这可能表示转储错误，但对于某些复刻卡带、未授权游戏、原型、修改版游戏和有意的"
+"过度转储来说，这可能是正常的。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:475
+#: ../package/FlashGBX/FlashGBX_GUI.py:1762
+msgid ""
+"The ROM backup is complete, but the checksum doesn’t match the known "
+"database entry."
+msgstr "ROM 备份已完成，但校验和与已知数据库条目不匹配。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:482
+#: ../package/FlashGBX/FlashGBX_GUI.py:1774
+msgid ""
+"The ROM backup is complete! As there is no known checksum for this ROM in "
+"the database, verification was skipped."
+msgstr "ROM 备份已完成！由于数据库中没有此 ROM 的已知校验和，已跳过验证。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:524
+msgid "The pictures were extracted."
+msgstr "图片已提取。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:527
+#: ../package/FlashGBX/FlashGBX_GUI.py:1820
+msgid "The save data backup is complete!"
+msgstr "存档备份已完成！"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:532
+#: ../package/FlashGBX/FlashGBX_GUI.py:1829
+msgid "The save data was erased."
+msgstr "存档已擦除。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:535
+msgid "The save data was restored!"
+msgstr "存档已恢复！"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:570
+msgid "An error occured while trying to connect to the device."
+msgstr "尝试连接设备时发生错误。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:591
+#, python-brace-format
+msgid ""
+"A firmware update for your {device_name} is required to fully use this "
+"software."
+msgstr "需要为您的 {device_name} 更新固件才能完全使用此软件。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:591
+#: ../package/FlashGBX/FlashGBX_GUI.py:1490
+#, python-brace-format
+msgid "Current firmware version: {fw_version}"
+msgstr "当前固件版本：{fw_version}"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:627
+#: ../package/FlashGBX/FlashGBX_GUI.py:1167
+#, python-brace-format
+msgid "Disconnected from {device_name}"
+msgstr "已断开与 {device_name} 的连接"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:643
+#: ../package/FlashGBX/FlashGBX_CLI.py:719
+#: ../package/FlashGBX/FlashGBX_GUI.py:602
+#: ../package/FlashGBX/FlashGBX_GUI.py:615
+msgid "Game Name:"
+msgstr "游戏名称："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:645
+#: ../package/FlashGBX/FlashGBX_CLI.py:721
+#: ../package/FlashGBX/FlashGBX_GUI.py:603
+#: ../package/FlashGBX/FlashGBX_GUI.py:616
+#: ../package/FlashGBX/FlashGBX_GUI.py:3680
+msgid "ROM Title:"
+msgstr "ROM 标题："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:648
+#: ../package/FlashGBX/FlashGBX_CLI.py:650
+#: ../package/FlashGBX/FlashGBX_CLI.py:724
+#: ../package/FlashGBX/FlashGBX_CLI.py:726
+#: ../package/FlashGBX/FlashGBX_GUI.py:604
+#: ../package/FlashGBX/FlashGBX_GUI.py:617
+#: ../package/FlashGBX/FlashGBX_GUI.py:3325
+msgid "Game Code and Revision:"
+msgstr "游戏代码和修订版："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:652
+msgid "Revision:"
+msgstr "修订版："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:658
+#: ../package/FlashGBX/FlashGBX_GUI.py:448
+msgid "Game Boy Color exclusive"
+msgstr "Game Boy Color 独占"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:660
+#: ../package/FlashGBX/FlashGBX_GUI.py:463
+msgid "Game Boy Color"
+msgstr "Game Boy Color"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:662
+#: ../package/FlashGBX/FlashGBX_GUI.py:473
+#: ../package/FlashGBX/PocketCameraWindow.py:68
+msgid "Super Game Boy"
+msgstr "Super Game Boy"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:664
+#: ../package/FlashGBX/FlashGBX_GUI.py:483
+#: ../package/FlashGBX/PocketCameraWindow.py:67
+msgid "Original Game Boy"
+msgstr "原版 Game Boy"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:665
+msgid "Platform:"
+msgstr "平台："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:667
+#: ../package/FlashGBX/FlashGBX_CLI.py:728
+#: ../package/FlashGBX/FlashGBX_GUI.py:605
+#: ../package/FlashGBX/FlashGBX_GUI.py:618
+msgid "Real Time Clock:"
+msgstr "实时时钟："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:670
+#: ../package/FlashGBX/FlashGBX_CLI.py:675
+#: ../package/FlashGBX/FlashGBX_CLI.py:731
+#: ../package/FlashGBX/FlashGBX_CLI.py:736
+#: ../package/FlashGBX/FlashGBX_GUI.py:606
+#: ../package/FlashGBX/FlashGBX_GUI.py:619
+msgid "Boot Logo:"
+msgstr "启动标志："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:670
+#: ../package/FlashGBX/FlashGBX_CLI.py:731
+#: ../package/FlashGBX/FlashGBX_GUI.py:3352
+msgctxt "Game Data"
+msgid "OK"
+msgstr "正常"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:675
+#: ../package/FlashGBX/FlashGBX_CLI.py:736
+#: ../package/FlashGBX/FlashGBX_CLI.py:742
+#: ../package/FlashGBX/FlashGBX_GUI.py:1719
+#: ../package/FlashGBX/FlashGBX_GUI.py:1759
+#: ../package/FlashGBX/FlashGBX_GUI.py:3358
+#: ../package/FlashGBX/FlashGBX_GUI.py:3477
+#: ../package/FlashGBX/FlashGBX_GUI.py:3493
+msgctxt "Game Data"
+msgid "Invalid"
+msgstr "无效"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:678
+#: ../package/FlashGBX/FlashGBX_CLI.py:763
+#: ../package/FlashGBX/FlashGBX_GUI.py:607
+#: ../package/FlashGBX/FlashGBX_GUI.py:621
+msgid "ROM Checksum:"
+msgstr "ROM 校验和："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:681
+#: ../package/FlashGBX/FlashGBX_CLI.py:683
+#: ../package/FlashGBX/FlashGBX_CLI.py:764
+#: ../package/FlashGBX/FlashGBX_CLI.py:868
+#: ../package/FlashGBX/FlashGBX_CLI.py:871
+#: ../package/FlashGBX/FlashGBX_GUI.py:608
+#: ../package/FlashGBX/FlashGBX_GUI.py:622
+#: ../package/FlashGBX/FlashGBX_GUI.py:3741
+#: ../package/FlashGBX/FlashGBX_GUI.py:3744
+msgid "ROM Size:"
+msgstr "ROM 大小："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:683
+#: ../package/FlashGBX/FlashGBX_CLI.py:700
+#: ../package/FlashGBX/FlashGBX_CLI.py:706
+#: ../package/FlashGBX/FlashGBX_CLI.py:760
+msgctxt "Game Data"
+msgid "Not detected"
+msgstr "未检测到"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:701
+#: ../package/FlashGBX/FlashGBX_CLI.py:780
+#: ../package/FlashGBX/FlashGBX_CLI.py:849
+#: ../package/FlashGBX/FlashGBX_CLI.py:851
+#: ../package/FlashGBX/FlashGBX_CLI.py:854
+#: ../package/FlashGBX/FlashGBX_CLI.py:856
+#: ../package/FlashGBX/FlashGBX_GUI.py:609
+#: ../package/FlashGBX/FlashGBX_GUI.py:623
+#: ../package/FlashGBX/FlashGBX_GUI.py:3712
+#: ../package/FlashGBX/FlashGBX_GUI.py:3714
+#: ../package/FlashGBX/FlashGBX_GUI.py:3717
+#: ../package/FlashGBX/FlashGBX_GUI.py:3719
+msgid "Save Type:"
+msgstr "存档类型："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:704
+#: ../package/FlashGBX/FlashGBX_CLI.py:706
+#: ../package/FlashGBX/FlashGBX_CLI.py:876
+#: ../package/FlashGBX/FlashGBX_CLI.py:878
+#: ../package/FlashGBX/FlashGBX_CLI.py:880
+#: ../package/FlashGBX/FlashGBX_GUI.py:610
+#: ../package/FlashGBX/FlashGBX_GUI.py:3749
+#: ../package/FlashGBX/FlashGBX_GUI.py:3751
+#: ../package/FlashGBX/FlashGBX_GUI.py:3753
+msgid "Mapper Type:"
+msgstr "Mapper 类型："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:710
+#, python-brace-format
+msgid ""
+"Warning: This cartridge uses a mapper that may not be completely supported "
+"by FlashGBX using the current firmware version of the {device_name}. Please "
+"check for firmware updates."
+msgstr ""
+"警告：此卡带使用的 mapper 在当前 {device_name} 固件版本下可能不被 FlashGBX 完"
+"全支持。请检查固件更新。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:740
+#: ../package/FlashGBX/FlashGBX_CLI.py:742
+#: ../package/FlashGBX/FlashGBX_GUI.py:620
+msgid "Header Checksum:"
+msgstr "头部校验和："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:740
+#: ../package/FlashGBX/FlashGBX_GUI.py:1706
+#: ../package/FlashGBX/FlashGBX_GUI.py:1752
+#: ../package/FlashGBX/FlashGBX_GUI.py:3490
+msgctxt "Game Data"
+msgid "Valid"
+msgstr "有效"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:750
+#: ../package/FlashGBX/FlashGBX_GUI.py:3504
+msgctxt "Game Data"
+msgid "In database"
+msgstr "在数据库中"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:754
+#: ../package/FlashGBX/FlashGBX_CLI.py:759
+#: ../package/FlashGBX/FlashGBX_CLI.py:779
+msgctxt "Game Data"
+msgid "No database entry"
+msgstr "无数据库条目"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:783
+#, python-brace-format
+msgid ""
+"Warning: This cartridge uses a mapper that may not be completely supported "
+"yet. A future version of the {device_name} firmware may add support for it."
+msgstr ""
+"警告：此卡带使用的 mapper 可能尚未被完全支持。未来版本的 {device_name} 固件可"
+"能会增加对其的支持。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:793
+msgid "Now attempting to auto-detect the flashcart profile..."
+msgstr "正在尝试自动检测烧录卡配置..."
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:795
+msgid ""
+"The cartridge connection is unstable!\n"
+"Please clean the cartridge pins, carefully re-align the cartridge and then "
+"try again."
+msgstr ""
+"卡带连接不稳定！\n"
+"请清洁卡带金手指，仔细重新对齐卡带，然后重试。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:798
+#, python-brace-format
+msgid ""
+"No flashcart profile configuration files found. Try to restart the "
+"application with the “{switch}” command line switch to reset the "
+"configuration."
+msgstr ""
+"未找到烧录卡配置文件。请尝试使用命令行开关“{switch}”重启应用程序以重置配置。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:806
+msgid "Cartridge detection failed."
+msgstr "卡带检测失败。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:828
+#: ../package/FlashGBX/FlashGBX_GUI.py:3669
+msgctxt "Flashcart Profile List “- PROFILE NAME ← selected”"
+msgid "selected"
+msgstr "已选"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:835
+#: ../package/FlashGBX/FlashGBX_GUI.py:3821
+msgid "Game Title:"
+msgstr "游戏标题："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:851
+#: ../package/FlashGBX/FlashGBX_GUI.py:3714
+msgctxt "Save Type"
+msgid "None or unknown (no save data detected)"
+msgstr "无或未知（未检测到存档数据）"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:854
+#: ../package/FlashGBX/FlashGBX_GUI.py:3717
+msgctxt "Save Data Access"
+msgid "not stable or not battery-backed"
+msgstr "不稳定或无电池备份"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:864
+#: ../package/FlashGBX/FlashGBX_CLI.py:884
+#: ../package/FlashGBX/FlashGBX_CLI.py:908
+#: ../package/FlashGBX/FlashGBX_GUI.py:3733
+#: ../package/FlashGBX/FlashGBX_GUI.py:3735
+#: ../package/FlashGBX/FlashGBX_GUI.py:3757
+#: ../package/FlashGBX/FlashGBX_GUI.py:3780
+msgid "Flashcart Profile:"
+msgstr "烧录卡配置："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:864
+msgid "Supported flash cartridge – compatible with:"
+msgstr "支持的烧录卡 – 兼容："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:876
+#: ../package/FlashGBX/FlashGBX_GUI.py:3749
+msgid "Manual selection"
+msgstr "手动选择"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:880
+#: ../package/FlashGBX/FlashGBX_GUI.py:3753
+msgctxt "Mapper Type"
+msgid "Default"
+msgstr "默认"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:884
+#: ../package/FlashGBX/FlashGBX_GUI.py:3757
+msgid "Unknown flash cartridge"
+msgstr "未知烧录卡"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:905
+#, python-brace-format
+msgid ""
+"For ROM writing, you can give the option called “{try_this}” a try at your "
+"own risk."
+msgstr "对于 ROM 写入，您可以自行承担风险尝试使用名为“{try_this}”的选项。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:908
+msgctxt "Flashcart Profile"
+msgid "not rewritable or not auto-detectable"
+msgstr "不可重写或无法自动检测"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:910
+#: ../package/FlashGBX/FlashGBX_GUI.py:3787
+msgid "Flash ID Check:"
+msgstr "Flash ID 检查："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:913
+#: ../package/FlashGBX/FlashGBX_CLI.py:915
+#: ../package/FlashGBX/FlashGBX_GUI.py:3791
+#: ../package/FlashGBX/FlashGBX_GUI.py:3793
+#, python-brace-format
+msgid "{common_flash_interface} Data:"
+msgstr "{common_flash_interface} 数据："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:915
+msgctxt "Common Flash Interface Data"
+msgid "No data provided"
+msgstr "未提供数据"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:917
+#: ../package/FlashGBX/FlashGBX_GUI.py:3823
+msgid "The following cartridge configuration was detected:"
+msgstr "检测到以下卡带配置："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:934
+#: ../package/FlashGBX/FlashGBX_CLI.py:1243
+#, python-brace-format
+msgid ""
+"Couldn’t determine mapper type, will try to use MBC5. It can also be "
+"manually set with the “{switch}” command line switch."
+msgstr ""
+"无法确定 mapper 类型，将尝试使用 MBC5。也可以使用命令行开关“{switch}”手动设"
+"置。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:955
+#, python-brace-format
+msgid ""
+"Couldn’t determine ROM size, will use 8{mib}. It can also be manually set "
+"with the “{switch}” command line switch."
+msgstr ""
+"无法确定 ROM 大小，将使用 8{mib}。也可以使用命令行开关“{switch}”手动设置。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:974
+#: ../package/FlashGBX/FlashGBX_CLI.py:1323
+#: ../package/FlashGBX/FlashGBX_CLI.py:1542
+#, python-brace-format
+msgid ""
+"The target file “{file_path}” already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"目标文件“{file_path}”已存在。\n"
+"是否要覆盖它？"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:984
+#: ../package/FlashGBX/FlashGBX_CLI.py:1102
+#: ../package/FlashGBX/FlashGBX_CLI.py:1383
+#: ../package/FlashGBX/FlashGBX_CLI.py:1551
+#: ../package/FlashGBX/FlashGBX_CLI.py:1574
+#, python-brace-format
+msgid "Couldn’t access file “{path}”."
+msgstr "无法访问文件“{path}”。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:987
+#: ../package/FlashGBX/FlashGBX_CLI.py:1105
+#: ../package/FlashGBX/FlashGBX_CLI.py:1386
+#, python-brace-format
+msgid "Couldn’t find file “{path}”."
+msgstr "找不到文件“{path}”。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:990
+#, python-brace-format
+msgid "The ROM will now be read and saved to “{path}”."
+msgstr "现在将读取 ROM 并保存到“{path}”。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:993
+#: ../package/FlashGBX/FlashGBX_CLI.py:1203
+#: ../package/FlashGBX/FlashGBX_CLI.py:1348
+#, python-brace-format
+msgid "Mapper Type “{mapper_type}” is used."
+msgstr "使用 Mapper 类型“{mapper_type}”。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:995
+#: ../package/FlashGBX/FlashGBX_CLI.py:1205
+#: ../package/FlashGBX/FlashGBX_CLI.py:1350
+#, python-brace-format
+msgid "Mapper Type {mapper_type_value} is used."
+msgstr "使用 Mapper 类型 {mapper_type_value}。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1013
+#: ../package/FlashGBX/FlashGBX_CLI.py:1023
+#: ../package/FlashGBX/FlashGBX_CLI.py:1029
+#: ../package/FlashGBX/FlashGBX_CLI.py:1052
+#: ../package/FlashGBX/FlashGBX_CLI.py:1633
+#, python-brace-format
+msgid "Selected flashcart profile: {profile}"
+msgstr "已选烧录卡配置：{profile}"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1018
+msgid "Error: Couldn’t select the flashcart profile."
+msgstr "错误：无法选择烧录卡配置。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1062
+#, python-brace-format
+msgid ""
+"If your flash cartridge requires 5V to work, you can use the “{switch}” "
+"command line switch, however please note that 5V can be unsafe for some "
+"flash chips."
+msgstr ""
+"如果您的烧录卡需要 5V 才能工作，您可以使用命令行开关“{switch}”，但请注意 5V "
+"对某些闪存芯片可能不安全。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1063
+#: ../package/FlashGBX/FlashGBX_CLI.py:1640
+#, python-brace-format
+msgid ""
+"Auto-detection failed. Please use the “{switch}” command line switch to "
+"select the flashcart profile manually."
+msgstr "自动检测失败。请使用命令行开关“{switch}”手动选择烧录卡配置。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1067
+#: ../package/FlashGBX/FlashGBX_CLI.py:1635
+#, python-brace-format
+msgid ""
+"Couldn’t find the selected flashcart profile “{profile}”. Please make sure "
+"the correct platform is selected and copy the exact name from the "
+"configuration files located in {config_path}."
+msgstr ""
+"找不到所选的烧录卡配置“{profile}”。请确保选择了正确的平台，并从位于 "
+"{config_path} 的配置文件中复制确切的名称。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1071
+msgid "No ROM file for writing was selected."
+msgstr "未选择要写入的 ROM 文件。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1078
+#: ../package/FlashGBX/FlashGBX_GUI.py:2090
+#, python-brace-format
+msgid "ROM files bigger than 512{mib} are not supported."
+msgstr "不支持大于 512{mib} 的 ROM 文件。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1081
+#, python-brace-format
+msgid "ROM files smaller than 1{kib} are not supported."
+msgstr "不支持小于 1{kib} 的 ROM 文件。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1094
+#, python-brace-format
+msgid ""
+"The selected flashcart profile seems to support ROMs that are up to "
+"{max_size} in size, but the file you selected is {file_size}. You can still "
+"give it a try, but it’s possible that it’s too large which may cause the ROM "
+"writing to fail."
+msgstr ""
+"所选的烧录卡配置似乎支持最大 {max_size} 的 ROM，但您选择的文件大小为 "
+"{file_size}。您可以尝试一下，但可能太大导致 ROM 写入失败。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1095
+#: ../package/FlashGBX/FlashGBX_CLI.py:1210
+#: ../package/FlashGBX/FlashGBX_CLI.py:1589
+#: ../package/FlashGBX/FlashGBX_GUI.py:2230
+#: ../package/FlashGBX/FlashGBX_GUI.py:2844
+#: ../package/FlashGBX/hw_GBxCartRW.py:928 ../package/FlashGBX/hw_JoeyJr.py:725
+msgid "Do you want to continue?"
+msgstr "是否要继续？"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1115
+#, python-brace-format
+msgid ""
+"The selected flashcart profile usually flashes fine with 3.3V, however "
+"sometimes it may require 5V. You can use the “{switch}” command line switch "
+"if necessary. Please note that 5V can be unsafe for some flash chips."
+msgstr ""
+"所选的烧录卡配置通常在 3.3V 下可以正常烧录，但有时可能需要 5V。必要时可以使用"
+"命令行开关“{switch}”。请注意 5V 对某些闪存芯片可能不安全。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1124
+#, python-brace-format
+msgid ""
+"This flash cartridge supports both Sector Erase and Full Chip Erase methods. "
+"You can use the “{switch}” command line switch if necessary."
+msgstr ""
+"此烧录卡同时支持扇区擦除和全芯片擦除方法。必要时可以使用命令行开"
+"关“{switch}”。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1172
+#: ../package/FlashGBX/FlashGBX_GUI.py:2172
+msgid ""
+"Warning: The ROM file you selected will not boot on actual hardware due to "
+"invalid boot logo data."
+msgstr "警告：您选择的 ROM 文件由于启动标志数据无效，将无法在实际硬件上启动。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1183
+msgid "Fix the boot logo before continuing?"
+msgstr "在继续之前修复启动标志？"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1188
+msgid "Couldn’t find boot logo file in configuration folder."
+msgstr "在配置文件夹中找不到启动标志文件。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1191
+#, python-brace-format
+msgid ""
+"Warning: The ROM file you selected will not boot on actual hardware due to "
+"an invalid header checksum (expected {expected} instead of {actual})."
+msgstr ""
+"警告：您选择的 ROM 文件由于头部校验和无效（期望 {expected}，实际 {actual}），"
+"将无法在实际硬件上启动。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1192
+msgid "Fix the header checksum before continuing?"
+msgstr "在继续之前修复头部校验和？"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1200
+#, python-brace-format
+msgid ""
+"The following ROM file will now be written to the flash cartridge at "
+"{voltage}V:"
+msgstr "现在将以下 ROM 文件以 {voltage}V 写入烧录卡："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1209
+#: ../package/FlashGBX/FlashGBX_CLI.py:1588
+#: ../package/FlashGBX/FlashGBX_GUI.py:2230
+#: ../package/FlashGBX/FlashGBX_GUI.py:2844
+msgid ""
+"Warning: A 3.3V flashcart profile is selected, but your device is fixed to a "
+"5V supply in Game Boy mode. Writing to a 3.3V flash chip at 5V may cause "
+"overvoltage issues."
+msgstr ""
+"警告：已选择 3.3V 烧录卡配置，但您的设备在 Game Boy 模式下固定为 5V 供电。以 "
+"5V 写入 3.3V 闪存芯片可能会导致过压问题。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1282
+#, python-brace-format
+msgid ""
+"Unable to auto-detect the save size. Please use the “{switch}” command line "
+"switch to manually select it."
+msgstr "无法自动检测存档大小。请使用命令行开关“{switch}”手动选择。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1298
+#, python-brace-format
+msgid ""
+"Unable to auto-detect the save type. Please use the “{switch}” command line "
+"switch to manually select it."
+msgstr "无法自动检测存档类型。请使用命令行开关“{switch}”手动选择。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1328
+msgid ""
+"The cartridge save data will now be read and saved to the following file:"
+msgstr "现在将读取卡带存档数据并保存到以下文件："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1331
+msgid ""
+"Do you want to overwrite the existing save data that’s currently on the "
+"cartridge?"
+msgstr "是否要覆盖卡带上现有的存档数据？"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1335
+#: ../package/FlashGBX/FlashGBX_GUI.py:2473
+msgid "The following save data file will now be written to the cartridge:"
+msgstr "现在将以下存档文件写入卡带："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1338
+msgid "Do you really want to erase the save data from the cartridge?"
+msgstr "您确定要擦除卡带上的存档数据吗？"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1342
+msgid "The cartridge save data will now be erased from the cartridge."
+msgstr "现在将从卡带中擦除存档数据。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1344
+msgid "The cartridge save data size will now be examined."
+msgstr "现在将检查卡带存档数据大小。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1344
+msgid "Note: This is for debug use only."
+msgstr "注意：此功能仅供调试使用。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1356
+#: ../package/FlashGBX/FlashGBX_GUI.py:2520
+#: ../package/FlashGBX/FlashGBX_GUI.py:2558
+msgid "This cartridge is not supported in Legacy Mode."
+msgstr "此卡带在传统模式下不受支持。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1364
+msgid "Note: Keeping existing e-Reader calibration data."
+msgstr "注意：保留现有的 e-Reader 校准数据。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1367
+msgid "Note: Overwriting existing e-Reader calibration data."
+msgstr "注意：覆盖现有的 e-Reader 校准数据。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1369
+msgid "Note: No existing e-Reader calibration data found."
+msgstr "注意：未找到现有的 e-Reader 校准数据。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1370
+#, python-brace-format
+msgid "Using Save Type “{save_type}”."
+msgstr "使用存档类型“{save_type}”。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1373
+msgid ""
+"Real Time Clock register values will also be written if applicable/possible."
+msgstr "如果适用/可能，实时时钟寄存器值也将被写入。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1404
+msgid "Making a backup of the original save data."
+msgstr "正在备份原始存档数据。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1408
+msgid "Writing random data."
+msgstr "正在写入随机数据。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1413
+msgid "Reading back and comparing data."
+msgstr "正在读回并比较数据。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1418
+msgid "Power cycling."
+msgstr "正在电源循环。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1424
+msgid "Reading back and comparing data again."
+msgstr "再次读回并比较数据。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1428
+msgid "Restoring original save data."
+msgstr "正在恢复原始存档数据。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1442
+msgid "Differences found:"
+msgstr "发现差异："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1447
+msgid "Differences found between two consecutive readbacks:"
+msgstr "连续两次读回之间发现差异："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1453
+#, python-brace-format
+msgid ""
+"It was not possible to save any data to the cartridge using save type "
+"“{save_type}”."
+msgstr "无法使用存档类型“{save_type}”向卡带保存任何数据。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1455
+msgid "It was not possible to save any data to the cartridge."
+msgstr "无法向卡带保存任何数据。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1466
+#, python-brace-format
+msgid ""
+"Done! The writable save data size is {data_writable} out of {data_checked} "
+"checked."
+msgstr ""
+"完成！在检查的 {data_checked} 中，可写入的存档数据大小为 {data_writable}。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1468
+#, python-brace-format
+msgid ""
+"Done! The writable save data size using save type “{save_type}” is "
+"{data_writable}."
+msgstr ""
+"完成！使用存档类型“{save_type}”的可写入存档数据大小为 {data_writable}。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1482
+#: ../package/FlashGBX/FlashGBX_CLI.py:1489
+#, python-brace-format
+msgid "Invalid value for {switch}: {value}"
+msgstr "{switch} 的值无效：{value}"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1510
+#, python-brace-format
+msgid ""
+"Batteryless SRAM offset and size could not be auto-detected. Use the "
+"“{switch_offset}” and “{switch_size}” command line switches to specify them "
+"manually."
+msgstr ""
+"无法自动检测无电池 SRAM 的偏移量和大小。请使用命令行开"
+"关“{switch_offset}”和“{switch_size}”手动指定。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1524
+#: ../package/FlashGBX/FlashGBX_GUI.py:2495
+msgid "Stress test is not supported for this save type."
+msgstr "此存档类型不支持压力测试。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1533
+msgid "Batteryless SRAM Mode"
+msgstr "无电池 SRAM 模式"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1534
+#: ../package/FlashGBX/FlashGBX_GUI.py:2963
+msgid "Location:"
+msgstr "位置："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1536
+#: ../package/FlashGBX/FlashGBX_GUI.py:2969
+msgid "Continuous"
+msgstr "连续"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1536
+#: ../package/FlashGBX/FlashGBX_GUI.py:2969
+msgid "First half of ROM bank"
+msgstr "ROM Bank 的前半部分"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1536
+#: ../package/FlashGBX/FlashGBX_GUI.py:2969
+msgid "Second half of ROM bank"
+msgstr "ROM Bank 的后半部分"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1537
+#: ../package/FlashGBX/FlashGBX_GUI.py:2969
+msgid "Layout:"
+msgstr "布局："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1547
+msgid ""
+"The Batteryless SRAM save data will now be read and saved to the following "
+"file:"
+msgstr "现在将读取无电池 SRAM 存档数据并保存到以下文件："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1566
+msgid ""
+"Do you want to overwrite the existing Batteryless SRAM save data on the "
+"cartridge?"
+msgstr "是否要覆盖卡带上现有的无电池 SRAM 存档数据？"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1570
+msgid ""
+"The following save data file will now be written to the cartridge’s "
+"Batteryless SRAM region:"
+msgstr "现在将以下存档文件写入卡带的无电池 SRAM 区域："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1578
+msgid ""
+"Do you really want to erase the Batteryless SRAM save data from the "
+"cartridge?"
+msgstr "您确定要擦除卡带上的无电池 SRAM 存档数据吗？"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1582
+msgid "The Batteryless SRAM save data will now be erased from the cartridge."
+msgstr "现在将从卡带中擦除无电池 SRAM 存档数据。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1655
+#: ../package/FlashGBX/FlashGBX_CLI.py:1739
+#: ../package/FlashGBX/FlashGBX_CLI.py:1812
+#: ../package/FlashGBX/hw_GBFlash.py:479
+#: ../package/FlashGBX/hw_GBxCartRW.py:468
+#: ../package/FlashGBX/hw_GBxCartRW.py:737
+#: ../package/FlashGBX/hw_GBxCartRW.py:1022
+#: ../package/FlashGBX/hw_GBxCartRW.py:1050
+#: ../package/FlashGBX/hw_GBxCartRW.py:1056
+#: ../package/FlashGBX/hw_JoeyJr.py:489
+#, python-brace-format
+msgid "Firmware Updater for {device_name}"
+msgstr "{device_name} 固件更新器"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1658
+msgid "Select your PCB version:"
+msgstr "选择您的 PCB 版本："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1659
+#: ../package/FlashGBX/FlashGBX_CLI.py:1829
+#, python-brace-format
+msgid "Enter number ({range}):"
+msgstr "输入数字（{range}）："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1678
+#: ../package/FlashGBX/FlashGBX_CLI.py:1752
+msgid "Available firmware version:"
+msgstr "可用固件版本："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1679
+#: ../package/FlashGBX/FlashGBX_CLI.py:1754
+#: ../package/FlashGBX/hw_GBFlash.py:629
+#: ../package/FlashGBX/hw_GBxCartRW.py:652
+msgid "Please follow these steps to proceed with the firmware update:"
+msgstr "请按照以下步骤进行固件更新："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1681
+#, python-brace-format
+msgid ""
+"- Disconnect the USB cable of your GBxCart RW.\n"
+"- On the circuit board of your GBxCart RW, press and hold down the small "
+"button while connecting the USB cable again.\n"
+"- Keep the small button held for at least 2 seconds, then let go of it.\n"
+"- If done right, the green LED labeled “{led}” should remain lit."
+msgstr ""
+"- 断开 GBxCart RW 的 USB 数据线。\n"
+"- 在 GBxCart RW 的电路板上，按住小按钮的同时重新连接 USB 数据线。\n"
+"- 按住小按钮至少 2 秒钟，然后松开。\n"
+"- 如果操作正确，标有“{led}”的绿色 LED 灯应保持常亮。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1687
+#: ../package/FlashGBX/FlashGBX_CLI.py:1759
+msgid "- Press ENTER to continue."
+msgstr "- 按回车键继续。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1708
+#: ../package/FlashGBX/FlashGBX_CLI.py:1781
+#: ../package/FlashGBX/FlashGBX_CLI.py:1859
+#, python-brace-format
+msgid "Using port {port}"
+msgstr "使用端口 {port}"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1714
+#: ../package/FlashGBX/FlashGBX_CLI.py:1787
+#: ../package/FlashGBX/FlashGBX_CLI.py:1875
+#, python-brace-format
+msgid ""
+"Couldn’t access port {port}.\n"
+"Enter new port:"
+msgstr ""
+"无法访问端口 {port}。\n"
+"输入新端口："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1725
+#: ../package/FlashGBX/FlashGBX_CLI.py:1798
+#: ../package/FlashGBX/FlashGBX_CLI.py:1887
+#: ../package/FlashGBX/hw_GBFlash.py:651
+#: ../package/FlashGBX/hw_GBxCartRW.py:674
+#: ../package/FlashGBX/hw_GBxCartRW.py:1241
+#: ../package/FlashGBX/hw_JoeyJr.py:744
+msgid "The firmware update is complete!"
+msgstr "固件更新完成！"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1728
+#: ../package/FlashGBX/FlashGBX_CLI.py:1801
+#: ../package/FlashGBX/FlashGBX_CLI.py:1890
+msgid "Please re-install the application."
+msgstr "请重新安装应用程序。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1742
+msgid "Supported revisions:"
+msgstr "支持的修订版："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1753
+msgid ""
+"Note: Cloned GBFlash hardware often don’t come with a firmware update "
+"feature."
+msgstr "注意：克隆的 GBFlash 硬件通常不带固件更新功能。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1755
+msgid ""
+"- Unplug your GBFlash device.\n"
+"- On your GBFlash circuit board, push and hold the small button (U22) while "
+"plugging the USB cable back in.\n"
+"- If done right, the blue LED labeled “ACT” should now keep blinking twice."
+msgstr ""
+"- 拔下 GBFlash 设备。\n"
+"- 在 GBFlash 电路板上，按住小按钮 (U22) 的同时重新插入 USB 数据线。\n"
+"- 如果操作正确，标有“ACT”的蓝色 LED 灯应持续闪烁两次。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1774
+#: ../package/FlashGBX/hw_GBFlash.py:361 ../package/FlashGBX/hw_GBFlash.py:375
+#: ../package/FlashGBX/hw_GBxCartRW.py:405 ../package/FlashGBX/hw_JoeyJr.py:773
+#: ../package/FlashGBX/hw_JoeyJr.py:780 ../package/FlashGBX/hw_JoeyJr.py:786
+msgid "No device found."
+msgstr "未找到设备。"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1824
+msgid "Select the firmware to install:"
+msgstr "选择要安装的固件："
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1825
+msgid "Lesserkuma’s FlashGBX firmware"
+msgstr "Lesserkuma 的 FlashGBX 固件"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1826
+msgid "BennVenn’s Drag’n’Drop firmware"
+msgstr "BennVenn 的 Drag’n’Drop 固件"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1827
+msgid "BennVenn’s JoeyGUI firmware"
+msgstr "BennVenn 的 JoeyGUI 固件"
+
+#: ../package/FlashGBX/FlashGBX_CLI.py:1852
+msgid ""
+"No devices found. If your Joey Jr is running the Drag’n’Drop firmware, you "
+"will have to use the JoeyGUI software to update the firmware."
+msgstr ""
+"未找到设备。如果您的 Joey Jr 正在运行 Drag’n’Drop 固件，您将需要使用 JoeyGUI "
+"软件来更新固件。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:601
+msgid "Game Boy Cartridge Information"
+msgstr "Game Boy 卡带信息"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:611
+#: ../package/FlashGBX/FlashGBX_GUI.py:624
+msgid "Profile:"
+msgstr "配置："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:614
+msgid "Game Boy Advance Cartridge Information"
+msgstr "Game Boy Advance 卡带信息"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:627
+msgid "Functions"
+msgstr "功能"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:628
+msgid "Plattform:"
+msgstr "平台："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:629
+msgctxt "Radio Button (& = Keyboard Shortcut)"
+msgid "&Game Boy"
+msgstr "Game Boy(&G)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:630
+msgctxt "Radio Button (& = Keyboard Shortcut)"
+msgid "Game Boy &Advance"
+msgstr "Game Boy Advance(&A)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:631
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Refresh"
+msgstr "刷新(&R)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:632
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "Analyze &Flash Cart"
+msgstr "分析烧录卡(&F)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:633
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Backup ROM"
+msgstr "备份 ROM(&B)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:634
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "Backup &Save Data"
+msgstr "备份存档(&S)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:635
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Write ROM"
+msgstr "写入 ROM(&W)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:636
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "Writ&e Save Data"
+msgstr "写入存档(&E)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:637
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Restore from save data file"
+msgstr "从存档文件恢复(&R)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:638
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Erase cartridge save data"
+msgstr "擦除卡带存档(&E)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:639
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Run stress &test"
+msgstr "运行压力测试(&T)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:642
+#: ../package/FlashGBX/FlashGBX_GUI.py:1195
+#: ../package/FlashGBX/FlashGBX_GUI.py:2003
+#: ../package/FlashGBX/FlashGBX_GUI.py:2252
+#: ../package/FlashGBX/FlashGBX_GUI.py:2396
+#: ../package/FlashGBX/FlashGBX_GUI.py:2640
+#: ../package/FlashGBX/FlashGBX_GUI.py:2879
+#: ../package/FlashGBX/FlashGBX_GUI.py:3560
+#: ../package/FlashGBX/FlashGBX_GUI.py:3602
+#: ../package/FlashGBX/FlashGBX_GUI.py:3977
+#: ../package/FlashGBX/FlashGBX_GUI.py:3979
+#: ../package/FlashGBX/FlashGBX_GUI.py:3981
+#: ../package/FlashGBX/FlashGBX_GUI.py:3983
+#: ../package/FlashGBX/FlashGBX_GUI.py:3985
+#: ../package/FlashGBX/FlashGBX_GUI.py:3987
+#: ../package/FlashGBX/FlashGBX_GUI.py:3989
+#: ../package/FlashGBX/FlashGBX_GUI.py:4113
+msgid "Transfer Status"
+msgstr "传输状态"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:643
+msgid "Data transferred:"
+msgstr "已传输数据："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:644
+msgid "Transfer rate:"
+msgstr "传输速率："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:645
+msgid "Time elapsed:"
+msgstr "已用时间："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:646
+#: ../package/FlashGBX/FlashGBX_GUI.py:1423
+#: ../package/FlashGBX/FlashGBX_GUI.py:1902
+#: ../package/FlashGBX/FlashGBX_GUI.py:1907
+#: ../package/FlashGBX/FlashGBX_GUI.py:3559
+#: ../package/FlashGBX/FlashGBX_GUI.py:3859
+#: ../package/FlashGBX/FlashGBX_GUI.py:3919
+#: ../package/FlashGBX/FlashGBX_GUI.py:4246
+#: ../package/FlashGBX/hw_GBxCartRW.py:833
+msgid "Ready."
+msgstr "就绪。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:647
+msgid "Stop"
+msgstr "停止"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:654
+#: ../package/FlashGBX/FlashGBX_GUI.py:655
+msgid "Click here to generate a log file for debugging"
+msgstr "点击此处生成用于调试的日志文件"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:658
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Tools"
+msgstr "工具(&T)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:659
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Game Boy &Camera Album Viewer"
+msgstr "Game Boy Camera 相册查看器(&C)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:660
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Interactive Console"
+msgstr "交互控制台(&I)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:661
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Firmware &Updater"
+msgstr "固件更新器(&U)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:664
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Settings"
+msgstr "设置(&S)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:665
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Check for &updates on application startup"
+msgstr "应用程序启动时检查更新(&U)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:666
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Append date && time to filename of save data backups"
+msgstr "在存档备份文件名后附加日期和时间(&A)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:667
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Prefer full &chip erase"
+msgstr "优先使用全芯片擦除(&C)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:668
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Verify transferred data"
+msgstr "验证传输的数据(&V)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:669
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Limit voltage when analyzing Game Boy carts"
+msgstr "分析 Game Boy 卡带时限制电压(&L)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:670
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Limit &baud rate to 1Mbps"
+msgstr "限制波特率为 1Mbps(&B)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:671
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Always &generate ROM dump reports"
+msgstr "始终生成 ROM 转储报告(&G)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:672
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Use &No-Intro file names"
+msgstr "使用 No-Intro 文件名(&N)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:673
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Automatic cartridge &power off"
+msgstr "自动关闭卡带电源(&P)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:674
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Skip writing matching ROM chunk&s"
+msgstr "跳过写入匹配的 ROM 块(&S)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:675
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Alternative address set mode (can fix or cause write &errors)"
+msgstr "备用地址设置模式（可修复或导致写入错误(&E)）"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:676
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Re-&enable suppressed messages"
+msgstr "重新启用已抑制的消息(&E)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:679
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Read Method (Game Boy Advance)"
+msgstr "读取方法（Game Boy Advance）(&R)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:680
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "S&tream"
+msgstr "流式(&T)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:681
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Single"
+msgstr "单次(&S)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:682
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Read Method (Game Boy)"
+msgstr "读取方法（Game Boy）(&R)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:683
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Normal"
+msgstr "正常(&N)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:684
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Delayed"
+msgstr "延迟(&D)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:687
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "&Language"
+msgstr "语言(&L)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:694
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Third Party &Notices"
+msgstr "第三方声明(&N)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:695
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "About &Qt"
+msgstr "关于 Qt(&Q)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:696
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "About Game &Database"
+msgstr "关于游戏数据库(&D)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:697
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Licenses"
+msgstr "许可证"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:701
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "Open &config folder"
+msgstr "打开配置文件夹(&C)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:702
+msgctxt "Menu Item (& = Keyboard Shortcut)"
+msgid "About &FlashGBX"
+msgstr "关于 FlashGBX(&F)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:705
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Options"
+msgstr "选项(&O)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:710
+#: ../package/FlashGBX/FlashGBX_GUI.py:1186
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Connect"
+msgstr "连接(&C)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1051
+#: ../package/FlashGBX/FlashGBX_GUI.py:1079
+msgctxt "GitHub API Link"
+msgid "privacy policy"
+msgstr "隐私政策"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1051
+#: ../package/FlashGBX/FlashGBX_GUI.py:1079
+#, python-brace-format
+msgid ""
+"Would you like to automatically check for new versions at application "
+"startup? This will make use of the GitHub API ({url})."
+msgstr "是否要在应用程序启动时自动检查新版本？这将使用 GitHub API（{url}）。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1079
+#, python-brace-format
+msgid "Welcome to {app} by {author}!"
+msgstr "欢迎使用 {author} 的 {app}！"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1089
+msgid ""
+"General precautions:\n"
+"- Due to voltage differences, do not insert a Game Boy Advance cartridge "
+"while the platform mode is set to “Game Boy”.\n"
+"- Always keep the cartridge contacts as clean as possible to ensure a stable "
+"connection."
+msgstr ""
+"一般注意事项：\n"
+"- 由于电压差异，当平台模式设置为“Game Boy”时，请勿插入 Game Boy Advance 卡"
+"带。\n"
+"- 始终保持卡带触点尽可能清洁，以确保连接稳定。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1098
+msgid ""
+"Error: Update check failed due to a connection timeout. Please check your "
+"internet connection."
+msgstr "错误：由于连接超时，更新检查失败。请检查您的互联网连接。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1101
+msgid ""
+"Error: Update check failed due to a connection error. Please check your "
+"network connection."
+msgstr "错误：由于连接错误，更新检查失败。请检查您的网络连接。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1104
+#: ../package/FlashGBX/FlashGBX_GUI.py:1132
+msgid ""
+"Error: An unexpected error occured while querying the latest version "
+"information from GitHub."
+msgstr "错误：从 GitHub 查询最新版本信息时发生意外错误。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1113
+msgid "You are using the latest version of FlashGBX."
+msgstr "您正在使用最新版本的 FlashGBX。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1116
+#, python-brace-format
+msgid ""
+"A new version of FlashGBX has been released!\n"
+"Version {new_version} is now available."
+msgstr ""
+"FlashGBX 的新版本已发布！\n"
+"版本 {new_version} 现已可用。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1117
+msgid "Update Check"
+msgstr "更新检查"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1118
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Open release notes"
+msgstr "打开发行说明(&O)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1119
+#: ../package/FlashGBX/InteractiveConsoleWindow.py:54
+#: ../package/FlashGBX/PocketCameraWindow.py:100
+#: ../package/FlashGBX/hw_GBFlash.py:568
+#: ../package/FlashGBX/hw_GBxCartRW.py:569
+#: ../package/FlashGBX/hw_GBxCartRW.py:842 ../package/FlashGBX/hw_JoeyJr.py:617
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Close"
+msgstr "关闭(&C)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1126
+#, python-brace-format
+msgid ""
+"This version of FlashGBX ({appver}) seems to be newer than the latest public "
+"release ({public_version})."
+msgstr ""
+"此版本的 FlashGBX（{appver}）似乎比最新的公开发行版（{public_version}）更新。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1128
+msgid ""
+"Error: Update check failed due to missing version information in JSON data "
+"from GitHub."
+msgstr "错误：由于来自 GitHub 的 JSON 数据中缺少版本信息，更新检查失败。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1130
+msgid "Error: Update check failed due to malformed JSON data from GitHub."
+msgstr "错误：由于来自 GitHub 的 JSON 数据格式错误，更新检查失败。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1135
+msgid ""
+"Error: Failed to check for updates (too many API requests). Try again later."
+msgstr "错误：检查更新失败（API 请求过多）。请稍后重试。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1137
+#, python-brace-format
+msgid "Error: Failed to check for updates (HTTP status {status_code})."
+msgstr "错误：检查更新失败（HTTP 状态 {status_code}）。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1187
+#: ../package/FlashGBX/FlashGBX_GUI.py:1189
+#: ../package/FlashGBX/FlashGBX_GUI.py:1194
+msgid "Disconnected."
+msgstr "已断开连接。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1228
+#, python-brace-format
+msgid ""
+"FlashGBX uses a game database that is based on the ongoing efforts of the No-"
+"Intro project. Visit {url} for more information."
+msgstr ""
+"FlashGBX 使用的游戏数据库基于 No-Intro 项目的持续努力。访问 {url} 了解更多信"
+"息。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1229
+msgid "No-Intro databases referenced for this version of FlashGBX:"
+msgstr "此版本 FlashGBX 引用的 No-Intro 数据库："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1247
+#, python-brace-format
+msgctxt "Menu Item"
+msgid "About {device_name}"
+msgstr "关于 {device_name}"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1263
+#, python-brace-format
+msgid "Firmware version: {fw_version}"
+msgstr "固件版本：{fw_version}"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1321
+msgid "The file was not found."
+msgstr "未找到该文件。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1370
+msgid "No connection."
+msgstr "无连接。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1421
+msgid "Ready. Please select Platform Mode."
+msgstr "就绪。请选择平台模式。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1424
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Disconnect"
+msgstr "断开连接(&D)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1427
+msgid "Legacy Mode"
+msgstr "传统模式"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1467
+#, python-brace-format
+msgid ""
+"A firmware update for your {device_name} is required to use this software. "
+"Do you want to update now?"
+msgstr "需要为您的 {device_name} 更新固件才能使用此软件。是否立即更新？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1470
+#, python-brace-format
+msgid ""
+"Your {device_name} is no longer supported in this version of FlashGBX due to "
+"technical limitations. The last supported version is {url}."
+msgstr ""
+"由于技术限制，此版本的 FlashGBX 不再支持您的 {device_name}。最后支持的版本是 "
+"{url}。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1470
+msgid ""
+"The Firmware Updater can still be used, however any other functions are no "
+"longer available."
+msgstr "固件更新器仍可使用，但其他功能不再可用。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1470
+msgid "Do you want to run the Firmware Updater now?"
+msgstr "是否立即运行固件更新器？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1473
+#, python-brace-format
+msgid ""
+"A firmware update for your {device_name} is available. Do you want to update "
+"now?"
+msgstr "您的 {device_name} 有可用的固件更新。是否立即更新？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1475
+msgctxt "Check Box (& = Keyboard Shortcut)"
+msgid "&Ignore firmware updates"
+msgstr "忽略固件更新(&I)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1490
+#, python-brace-format
+msgid ""
+"A firmware update for your {device_name} is required to use this software."
+msgstr "需要为您的 {device_name} 更新固件才能使用此软件。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1521
+msgid "Searching..."
+msgstr "正在搜索..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1575
+msgctxt "Joey Jr is compatible, but requires a firmware update"
+msgid "firmware update required"
+msgstr "需要固件更新"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1583
+msgid ""
+"No compatible devices found. Please ensure the device is connected properly."
+msgstr "未找到兼容设备。请确保设备已正确连接。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1583
+msgid "Compatible devices:"
+msgstr "兼容设备："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1588
+msgid ""
+"Troubleshooting advice:\n"
+"- Re-connect the device with different USB cables and ports\n"
+"- Avoid battery charging cables and passive USB hubs\n"
+"- Perform a Firmware Update"
+msgstr ""
+"故障排除建议：\n"
+"- 使用不同的 USB 数据线和端口重新连接设备\n"
+"- 避免使用电池充电线和无源 USB 集线器\n"
+"- 执行固件更新"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1595
+#, python-brace-format
+msgid ""
+"<b>For Joey Jr on macOS:</b>\n"
+"An extra step is necessary to update the firmware: {url}"
+msgstr ""
+"<b>对于 macOS 上的 Joey Jr：</b>\n"
+"更新固件需要一个额外的步骤：{url}"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1597
+#, python-brace-format
+msgid ""
+"<b>For Linux users:</b>\n"
+"Ensure your user account has permissions to use the device. See the {readme} "
+"file for more information."
+msgstr ""
+"<b>对于 Linux 用户：</b>\n"
+"确保您的用户帐户有权使用该设备。有关更多信息，请参阅 {readme} 文件。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1600
+#: ../package/FlashGBX/FlashGBX_GUI.py:2199
+#: ../package/FlashGBX/FlashGBX_GUI.py:3831
+#: ../package/FlashGBX/FlashGBX_GUI.py:3866
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&OK"
+msgstr "确定(&O)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1601
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Firmware-Updater"
+msgstr "固件更新器(&F)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1620
+msgid "Connect to:"
+msgstr "连接到："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1644
+#: ../package/FlashGBX/FlashGBX_GUI.py:4076
+msgid "Stopping... Please wait."
+msgstr "正在停止...请稍候。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1648
+#: ../package/FlashGBX/FlashGBX_GUI.py:4028
+#: ../package/FlashGBX/FlashGBX_GUI.py:4029
+#: ../package/FlashGBX/FlashGBX_GUI.py:4039
+#: ../package/FlashGBX/FlashGBX_GUI.py:4040
+#: ../package/FlashGBX/FlashGBX_GUI.py:4041
+#: ../package/FlashGBX/FlashGBX_GUI.py:4047
+#: ../package/FlashGBX/FlashGBX_GUI.py:4048
+#: ../package/FlashGBX/FlashGBX_GUI.py:4049
+#: ../package/FlashGBX/FlashGBX_GUI.py:4055
+#: ../package/FlashGBX/FlashGBX_GUI.py:4056
+#: ../package/FlashGBX/FlashGBX_GUI.py:4057
+#: ../package/FlashGBX/FlashGBX_GUI.py:4081
+#: ../package/FlashGBX/FlashGBX_GUI.py:4082
+#: ../package/FlashGBX/FlashGBX_GUI.py:4155
+#: ../package/FlashGBX/FlashGBX_GUI.py:4159
+#: ../package/FlashGBX/FlashGBX_GUI.py:4164
+msgid "Pending..."
+msgstr "等待中..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1659
+msgid "Operation complete!"
+msgstr "操作完成！"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1666
+#: ../package/FlashGBX/FlashGBX_GUI.py:2788
+#, python-brace-format
+msgid "Total time elapsed: {elapsed}"
+msgstr "总耗时：{elapsed}"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1696
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "Open Dump &Report"
+msgstr "打开转储报告(&R)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1700
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "Generate Dump &Report"
+msgstr "生成转储报告(&R)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1702
+#: ../package/FlashGBX/FlashGBX_GUI.py:1819
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "Open Fol&der"
+msgstr "打开文件夹(&D)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1708
+#: ../package/FlashGBX/FlashGBX_GUI.py:1713
+#: ../package/FlashGBX/FlashGBX_GUI.py:1754
+#: ../package/FlashGBX/FlashGBX_GUI.py:1761
+#: ../package/FlashGBX/FlashGBX_GUI.py:1773
+#: ../package/FlashGBX/FlashGBX_GUI.py:1794
+#: ../package/FlashGBX/FlashGBX_GUI.py:1826
+#: ../package/FlashGBX/FlashGBX_GUI.py:1879
+#: ../package/FlashGBX/FlashGBX_GUI.py:2791
+#: ../package/FlashGBX/hw_GBFlash.py:459
+#: ../package/FlashGBX/hw_GBxCartRW.py:448
+#: ../package/FlashGBX/hw_GBxCartRW.py:1234
+#: ../package/FlashGBX/hw_JoeyJr.py:383 ../package/FlashGBX/hw_JoeyJr.py:469
+msgid "Done!"
+msgstr "完成！"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1715
+msgid "The ROM backup is complete."
+msgstr "ROM 备份已完成。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1726
+msgctxt "Advice when ROM backup was bad"
+msgid "You can also try to change the read mode in the options."
+msgstr "您也可以尝试在选项中更改读取模式。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1728
+#: ../package/FlashGBX/FlashGBX_GUI.py:1729
+#, python-brace-format
+msgid "Retry with {mapper}"
+msgstr "使用 {mapper} 重试"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1728
+#, python-brace-format
+msgid "If this is a “{gb_memory_cartridge}”, try the “{label}” option."
+msgstr "如果这是“{gb_memory_cartridge}”，请尝试“{label}”选项。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1802
+#: ../package/FlashGBX/FlashGBX_GUI.py:3225
+msgctxt "Check Box (& = Keyboard Shortcut)"
+msgid "&Don’t show this message again"
+msgstr "不再显示此消息(&D)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1803
+msgid "Would you like to load your save data with the GB Camera Viewer now?"
+msgstr "是否立即使用 GB Camera Viewer 加载您的存档？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1832
+msgid "The save data was written and verified successfully!"
+msgstr "存档已成功写入并验证通过！"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1834
+msgid "Save data writing complete!"
+msgstr "存档写入完成！"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1856
+#: ../package/FlashGBX/LK_Device.py:4793
+msgid ""
+"Troubleshooting advice:\n"
+"- Clean cartridge contacts\n"
+"- Check soldering if it’s a DIY cartridge\n"
+"- Avoid passive USB hubs and try different USB ports/cables\n"
+"- Check flashcart profile selection"
+msgstr ""
+"故障排除建议：\n"
+"- 清洁卡带触点\n"
+"- 如果是 DIY 卡带，检查焊接\n"
+"- 避免使用无源 USB 集线器，尝试不同的 USB 端口/数据线\n"
+"- 检查烧录卡配置选择"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1861
+#, python-brace-format
+msgid "- Check cartridge ROM storage size (at least {rom_size} is required)"
+msgstr "- 检查卡带 ROM 存储大小（至少需要 {rom_size}）"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1864
+#: ../package/FlashGBX/FlashGBX_GUI.py:1866
+#: ../package/FlashGBX/LK_Device.py:4167 ../package/FlashGBX/LK_Device.py:4169
+msgid "- Check mapper type used:"
+msgstr "- 检查使用的 mapper 类型："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1864
+#: ../package/FlashGBX/LK_Device.py:4167
+msgctxt "Mapper Type"
+msgid "manual selection"
+msgstr "手动选择"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1866
+#: ../package/FlashGBX/LK_Device.py:4169
+msgctxt "Mapper Type"
+msgid "forced by selected flashcart profile"
+msgstr "由所选烧录卡配置强制指定"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1868
+#: ../package/FlashGBX/LK_Device.py:4171
+#, python-brace-format
+msgid "- Check mapper type ROM size limit: likely up to {max_size}"
+msgstr "- 检查 mapper 类型 ROM 大小限制：可能最大为 {max_size}"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1869
+msgid "Do you want to write the sectors again that failed verification?"
+msgstr "是否要重新写入验证失败的扇区？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1955
+msgid ""
+"ROM header checksum and boot logo checks failed. Please ensure that the "
+"cartridge contacts are clean."
+msgstr "ROM 头部校验和及启动标志检查失败。请确保卡带触点清洁。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1955
+#: ../package/FlashGBX/FlashGBX_GUI.py:2552
+#: ../package/FlashGBX/FlashGBX_GUI.py:2601
+msgid "Do you still want to continue?"
+msgstr "是否仍要继续？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1974
+#: ../package/FlashGBX/FlashGBX_GUI.py:2072
+msgid "Game Boy ROM File"
+msgstr "Game Boy ROM 文件"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1974
+#: ../package/FlashGBX/FlashGBX_GUI.py:1984
+#: ../package/FlashGBX/FlashGBX_GUI.py:2072
+#: ../package/FlashGBX/FlashGBX_GUI.py:2074
+#: ../package/FlashGBX/FlashGBX_GUI.py:2507
+#: ../package/FlashGBX/PocketCameraWindow.py:288
+#: ../package/FlashGBX/hw_GBxCartRW.py:915
+msgid "All Files"
+msgstr "所有文件"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1984
+#: ../package/FlashGBX/FlashGBX_GUI.py:2074
+msgid "Game Boy Advance ROM File"
+msgstr "Game Boy Advance ROM 文件"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:1999
+#: ../package/FlashGBX/FlashGBX_GUI.py:2240
+#: ../package/FlashGBX/FlashGBX_GUI.py:2385
+#: ../package/FlashGBX/FlashGBX_GUI.py:2639
+#: ../package/FlashGBX/FlashGBX_GUI.py:2878
+msgid "Preparing..."
+msgstr "准备中..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2016
+msgid ""
+"The following ISX file will now be converted to a regular ROM file and then "
+"written to the flash cartridge:"
+msgstr "现在将以下 ISX 文件转换为常规 ROM 文件，然后写入烧录卡："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2018
+msgid "The following ROM file will now be written to the flash cartridge:"
+msgstr "现在将以下 ROM 文件写入烧录卡："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2054
+#: ../package/FlashGBX/FlashGBX_GUI.py:2293
+#: ../package/FlashGBX/FlashGBX_GUI.py:2438
+msgid "A compatible flashcart profile could not be auto-detected."
+msgstr "无法自动检测到兼容的烧录卡配置。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2077
+msgid ""
+"No ROM file was selected. Do you want to wipe the ROM contents of the "
+"cartridge instead?"
+msgstr "未选择 ROM 文件。是否要改为擦除卡带上的 ROM 内容？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2087
+msgid "The selected ROM file is empty."
+msgstr "所选的 ROM 文件为空。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2103
+#, python-brace-format
+msgid ""
+"The selected flashcart profile seems to support ROMs that are up to "
+"{max_size} in size, but the file you selected is {file_size}."
+msgstr ""
+"所选的烧录卡配置似乎支持最大 {max_size} 的 ROM，但您选择的文件大小为 "
+"{file_size}。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2104
+msgid ""
+"You can still give it a try, but it’s possible that it’s too large which may "
+"cause the ROM writing to fail."
+msgstr "您可以尝试一下，但可能太大导致 ROM 写入失败。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2150
+msgid ""
+"The ROM file you selected uses a different mapper type than your current "
+"selection. What mapper should be used when writing the ROM?"
+msgstr ""
+"您选择的 ROM 文件使用的 mapper 类型与您当前选择的不同。写入 ROM 时应使用哪个 "
+"mapper？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2150
+#: ../package/FlashGBX/FlashGBX_GUI.py:2165
+msgid "Selected mapper type:"
+msgstr "已选 mapper 类型："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2150
+#: ../package/FlashGBX/FlashGBX_GUI.py:2165
+msgid "ROM mapper type:"
+msgstr "ROM mapper 类型："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2155
+#: ../package/FlashGBX/FlashGBX_GUI.py:2186
+#: ../package/FlashGBX/FlashGBX_GUI.py:2200
+#: ../package/FlashGBX/FlashGBX_GUI.py:2214
+#: ../package/FlashGBX/FlashGBX_GUI.py:2538
+#: ../package/FlashGBX/FlashGBX_GUI.py:2583
+#: ../package/FlashGBX/FlashGBX_GUI.py:3837
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Cancel"
+msgstr "取消(&C)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2164
+msgctxt "Mapper Type"
+msgid "None/Unknown"
+msgstr "无/未知"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2165
+msgid ""
+"Warning: The ROM file you selected uses a different mapper type than your "
+"flashcart profile. The ROM file may be incompatible with your cartridge."
+msgstr ""
+"警告：您选择的 ROM 文件使用的 mapper 类型与您的烧录卡配置不同。ROM 文件可能与"
+"您的卡带不兼容。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2184
+#: ../package/FlashGBX/FlashGBX_GUI.py:2212
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Fix and Continue"
+msgstr "修复并继续(&F)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2185
+#: ../package/FlashGBX/FlashGBX_GUI.py:2213
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "Continue &without fixing"
+msgstr "不修复继续(&W)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2210
+#, python-brace-format
+msgid ""
+"Warning: The ROM file you selected will not boot on actual hardware due to "
+"an invalid header checksum (expected {calc} instead of {actual})."
+msgstr ""
+"警告：您选择的 ROM 文件由于头部校验和无效（期望 {calc}，实际 {actual}），将无"
+"法在实际硬件上启动。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2271
+#: ../package/FlashGBX/FlashGBX_GUI.py:2416
+#: ../package/FlashGBX/FlashGBX_GUI.py:2485
+msgid "This feature is not supported in Legacy Mode."
+msgstr "此功能在传统模式下不受支持。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2308
+#: ../package/FlashGBX/FlashGBX_GUI.py:2319
+#: ../package/FlashGBX/FlashGBX_GUI.py:2452
+#: ../package/FlashGBX/FlashGBX_GUI.py:2463
+msgid "No save type was selected."
+msgstr "未选择存档类型。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2351
+msgid ""
+"A Real Time Clock cartridge was detected. Do you want the cartridge’s Real "
+"Time Clock register values also to be saved?"
+msgstr "检测到实时时钟卡带。是否也要保存卡带的实时时钟寄存器值？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2480
+msgid "The save data on your cartridge will now be erased."
+msgstr "现在将擦除卡带上的存档数据。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2497
+msgid ""
+"The cartridge’s save chip will be tested for potential problems as follows:\n"
+"- Read the same data multiple times\n"
+"- Writing and reading different test patterns\n"
+"\n"
+"Please ensure the cartridge pins are freshly cleaned and the save data is "
+"backed up before proceeding."
+msgstr ""
+"将按如下方式测试卡带存档芯片的潜在问题：\n"
+"- 多次读取相同数据\n"
+"- 写入和读取不同的测试模式\n"
+"\n"
+"请在继续之前确保卡带金手指已清洁干净，并且存档数据已备份。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2499
+#, python-brace-format
+msgid ""
+"Note: Your {device_name} does not support automatic power cycling, so some "
+"tests may be skipped."
+msgstr "注意：您的 {device_name} 不支持自动电源循环，因此某些测试可能被跳过。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2507
+#: ../package/FlashGBX/PocketCameraWindow.py:288
+msgid "Save Data File"
+msgstr "存档文件"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2514
+msgid "The size of this file is not supported."
+msgstr "不支持此文件的大小。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2524
+#: ../package/FlashGBX/FlashGBX_GUI.py:2562
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Keep existing calibration data"
+msgstr "保留现有校准数据(&K)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2532
+#, python-brace-format
+msgid ""
+"This {cart_name} cartridge currently has calibration data in place. It is "
+"strongly recommended to keep the existing calibration data."
+msgstr "此 {cart_name} 卡带当前已有校准数据。强烈建议保留现有校准数据。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2532
+msgid "How do you want to proceed?"
+msgstr "您想如何进行？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2533
+#: ../package/FlashGBX/FlashGBX_GUI.py:2578
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Erase everything"
+msgstr "擦除所有数据(&E)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2536
+#, python-brace-format
+msgid ""
+"This {cart_name} cartridge currently has calibration data in place that is "
+"different from this save file’s data. It is strongly recommended to keep the "
+"existing calibration data unless you actually need to restore it from a "
+"previous backup."
+msgstr ""
+"此 {cart_name} 卡带当前的校准数据与此存档文件中的数据不同。强烈建议保留现有校"
+"准数据，除非您确实需要从之前的备份中恢复它。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2536
+msgid ""
+"Would you like to keep the existing calibration data, or overwrite it with "
+"data from the file you selected?"
+msgstr "您是要保留现有校准数据，还是用所选文件中的数据覆盖它？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2537
+#: ../package/FlashGBX/FlashGBX_GUI.py:2582
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Restore from save data"
+msgstr "从存档恢复(&R)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2552
+#, python-brace-format
+msgid ""
+"Warning: This {cart_name} cartridge may currently have calibration data in "
+"place. Erasing or overwriting this data may render the “{feature_name}” "
+"feature unusable. It is strongly recommended to create a backup of the "
+"original save data first and store it in a safe place. That way the "
+"calibration data can be restored later."
+msgstr ""
+"警告：此 {cart_name} 卡带当前可能有校准数据。擦除或覆盖这些数据可能会"
+"使“{feature_name}”功能无法使用。强烈建议先备份原始存档数据并保存在安全的地"
+"方。这样以后可以恢复校准数据。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2564
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Force recalibration"
+msgstr "强制重新校准(&F)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2577
+#, python-brace-format
+msgid ""
+"This {cart_name} cartridge currently has calibration data in place.\n"
+"\n"
+"How do you want to proceed?"
+msgstr ""
+"此 {cart_name} 卡带当前已有校准数据。\n"
+"\n"
+"您想如何进行？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2577
+msgid ""
+"It is recommended to keep the existing calibration data, but you can also "
+"choose to erase it or overwrite it with data from the file you selected."
+msgstr "建议保留现有校准数据，但您也可以选择擦除它或用所选文件中的数据覆盖它。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2581
+#, python-brace-format
+msgid ""
+"This {cart_name} cartridge currently has calibration data in place that is "
+"different from this save file’s data.\n"
+"\n"
+"How do you want to proceed?"
+msgstr ""
+"此 {cart_name} 卡带当前的校准数据与此存档文件中的数据不同。\n"
+"\n"
+"您想如何进行？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2601
+#, python-brace-format
+msgid ""
+"Warning: This {cart_name} cartridge may currently have calibration data in "
+"place. It is recommended to create a backup of the original save data first "
+"and store it in a safe place. That way the calibration data can be restored "
+"later."
+msgstr ""
+"警告：此 {cart_name} 卡带当前可能有校准数据。建议先备份原始存档数据并保存在安"
+"全的地方。这样以后可以恢复校准数据。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2619
+msgid ""
+"A Real Time Clock cartridge was detected. Do you want the Real Time Clock "
+"register values to be written as well?"
+msgstr "检测到实时时钟卡带。是否也要写入实时时钟寄存器值？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2620
+msgctxt "Check Box (& = Keyboard Shortcut)"
+msgid "&Adjust RTC"
+msgstr "调整 RTC(&A)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2670
+msgctxt "Stress Test Pattern"
+msgid "reading twice"
+msgstr "读取两次"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2671
+msgctxt "Stress Test Pattern"
+msgid "writing random values"
+msgstr "写入随机值"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2672
+#: ../package/FlashGBX/FlashGBX_GUI.py:2673
+#: ../package/FlashGBX/FlashGBX_GUI.py:2674
+#: ../package/FlashGBX/FlashGBX_GUI.py:2675
+#, python-brace-format
+msgctxt "Stress Test Pattern"
+msgid "writing {pattern}"
+msgstr "写入 {pattern}"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2676
+msgctxt "Stress Test Pattern"
+msgid "writing incrementing values"
+msgstr "写入递增的值"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2677
+msgctxt "Stress Test Pattern"
+msgid "writing decrementing values"
+msgstr "写入递减的值"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2688
+#, python-brace-format
+msgid "Testing ({pattern} 1/2)..."
+msgstr "测试中（{pattern} 1/2）..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2703
+#, python-brace-format
+msgid "Waiting for power cycle ({countdown})..."
+msgstr "等待电源循环（{countdown}）..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2710
+#, python-brace-format
+msgid "Testing ({pattern} 2/2)..."
+msgstr "测试中（{pattern} 2/2）..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2720
+msgid "An error occured. Please ensure you selected the correct save type."
+msgstr "发生错误。请确保选择了正确的存档类型。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2728
+#: ../package/FlashGBX/FlashGBX_GUI.py:2808
+#, python-brace-format
+msgid "Test {num} ({pattern}) failed!"
+msgstr "测试 {num}（{pattern}）失败！"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2728
+msgid "Note: SRAM requires a working battery to retain save data."
+msgstr "注意：SRAM 需要一块能正常工作的电池来保存存档数据。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2728
+#: ../package/FlashGBX/FlashGBX_GUI.py:3594
+msgid "Continue anyway?"
+msgstr "仍然继续？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2740
+#, python-brace-format
+msgid "Testing ({pattern})..."
+msgstr "测试中（{pattern}）..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2769
+msgid "Restoring original save data..."
+msgstr "正在恢复原始存档数据..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2796
+msgid "All tests completed successfully!"
+msgstr "所有测试均已成功完成！"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2813
+msgid "The stress test process was cancelled."
+msgstr "压力测试过程已取消。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2959
+#, python-brace-format
+msgid "{batteryless_sram} Parameters"
+msgstr "{batteryless_sram} 参数"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:2964
+msgid "Size:"
+msgstr "大小："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3012
+#: ../package/FlashGBX/FlashGBX_GUI.py:3046
+#: ../package/FlashGBX/FlashGBX_GUI.py:3078
+#, python-brace-format
+msgid "{mapper} Real Time Clock Editor"
+msgstr "{mapper} 实时时钟编辑器"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3013
+msgid ""
+"Enter the number of days, hours, minutes and seconds that passed since the "
+"RTC initially started."
+msgstr "输入自 RTC 初始启动以来经过的天数、小时数、分钟数和秒数。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3013
+#: ../package/FlashGBX/FlashGBX_GUI.py:3124
+msgid ""
+"Please note that all values are internal values. The game may use these only "
+"as a relative reference."
+msgstr "请注意，所有值都是内部值。游戏可能仅将它们用作相对参考。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3016
+#: ../package/FlashGBX/FlashGBX_GUI.py:3050
+msgctxt "Real Time Clock Setting"
+msgid "Days:"
+msgstr "天数："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3017
+#: ../package/FlashGBX/FlashGBX_GUI.py:3051
+#: ../package/FlashGBX/FlashGBX_GUI.py:3086
+#: ../package/FlashGBX/FlashGBX_GUI.py:3130
+msgctxt "Real Time Clock Setting"
+msgid "Hours:"
+msgstr "小时："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3018
+#: ../package/FlashGBX/FlashGBX_GUI.py:3052
+#: ../package/FlashGBX/FlashGBX_GUI.py:3087
+#: ../package/FlashGBX/FlashGBX_GUI.py:3131
+msgctxt "Real Time Clock Setting"
+msgid "Minutes:"
+msgstr "分钟："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3019
+#: ../package/FlashGBX/FlashGBX_GUI.py:3088
+#: ../package/FlashGBX/FlashGBX_GUI.py:3132
+msgctxt "Real Time Clock Setting"
+msgid "Seconds:"
+msgstr "秒："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3020
+#: ../package/FlashGBX/FlashGBX_GUI.py:3053
+msgctxt "Real Time Clock Setting"
+msgid "Ignore above time values and use the system time instead"
+msgstr "忽略上述时间值，改用系统时间"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3047
+msgid "Enter the number of days since your last play, and the current time."
+msgstr "输入自上次游玩以来的天数以及当前时间。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3047
+#: ../package/FlashGBX/FlashGBX_GUI.py:3079
+msgid ""
+"Please note that the day value is an internal value. The game may use it "
+"only as a relative reference."
+msgstr "请注意，天数值是一个内部值。游戏可能仅将其用作相对参考。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3079
+msgid "Enter the date and time used in the game."
+msgstr "输入游戏中使用的日期和时间。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3082
+msgctxt "Real Time Clock Setting"
+msgid "Years passed:"
+msgstr "经过的年数："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3083
+msgctxt "Real Time Clock Setting"
+msgid "Years since last leap year:"
+msgstr "自上一个闰年以来的年数："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3084
+#: ../package/FlashGBX/FlashGBX_GUI.py:3128
+msgctxt "Real Time Clock Setting"
+msgid "Month:"
+msgstr "月："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3085
+#: ../package/FlashGBX/FlashGBX_GUI.py:3129
+msgctxt "Real Time Clock Setting"
+msgid "Day:"
+msgstr "日："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3089
+#: ../package/FlashGBX/FlashGBX_GUI.py:3134
+msgctxt "Real Time Clock Setting"
+msgid "Ignore above values and use the system time instead"
+msgstr "忽略上述值，改用系统时间"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3123
+msgid "GBA Real Time Clock Editor"
+msgstr "GBA 实时时钟编辑器"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3124
+msgid "Enter the date and time for the Real Time Clock."
+msgstr "输入实时时钟的日期和时间。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3127
+msgctxt "Real Time Clock Setting"
+msgid "Year:"
+msgstr "年："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3133
+msgctxt "Real Time Clock Setting"
+msgid "Weekday:"
+msgstr "星期几："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3167
+msgid "The Real Time Clock register values have been updated."
+msgstr "实时时钟寄存器值已更新。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3170
+msgid "An error occured while updating the Real Time Clock register values."
+msgstr "更新实时时钟寄存器值时发生错误。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3184
+msgid ""
+"The connection to the device was lost!\n"
+"\n"
+"This can be happen in one of the following cases:\n"
+"- The USB cable was unplugged or is faulty\n"
+"- The inserted cartridge may draw too much peak power (try re-connecting a "
+"few times or try hotswapping the cartridge after connecting)\n"
+"- The inserted cartrdige may induce a short circuit (check for bad soldering)"
+msgstr ""
+"与设备的连接已丢失！\n"
+"\n"
+"这可能发生在以下情况之一：\n"
+"- USB 数据线被拔掉或有故障\n"
+"- 插入的卡带可能消耗的峰值功率过高（尝试重新连接几次，或在连接后尝试热插拔卡"
+"带）\n"
+"- 插入的卡带可能引起短路（检查焊接不良）"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3184
+msgid "Do you want to try and reconnect to the device?"
+msgstr "是否要尝试重新连接到设备？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3219
+msgid "Important: Also make sure your device is set to the correct voltage!"
+msgstr "重要提示：同时请确保您的设备已设置为正确的电压！"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3227
+msgid ""
+"Caution: Game Boy Advance cartridges must not be inserted in Game Boy mode. "
+"Doing so can break the cartridge, so please be careful."
+msgstr ""
+"注意：Game Boy Advance 卡带不得在 Game Boy 模式下插入。这样做可能会损坏卡带，"
+"请务必小心。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3230
+msgid "Game Boy"
+msgstr "Game Boy"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3230
+#, python-brace-format
+msgid "The platform mode will now be changed to {mode} mode."
+msgstr "现在将把平台模式更改为 {mode} 模式。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3252
+msgid "Failed to turn on the cartridge power."
+msgstr "开启卡带电源失败。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3252
+msgid "Automatic cartridge &power off"
+msgstr "自动关闭卡带电源(&P)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3252
+#, python-brace-format
+msgid "The “{setting}” setting has therefore been disabled."
+msgstr "因此，“{setting}”设置已被禁用。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3252
+msgid "&Connect"
+msgstr "连接(&C)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3252
+msgid "&Refresh"
+msgstr "刷新(&R)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3252
+#, python-brace-format
+msgid ""
+"Workaround advice:\n"
+"1. Eject the cartridge.\n"
+"2. Re-connect the USB cable.\n"
+"3. Click “{button_connect}” and select Platform mode.\n"
+"4. Insert the cartridge and click “{button_refresh}”."
+msgstr ""
+"解决方案建议：\n"
+"1. 弹出卡带。\n"
+"2. 重新连接 USB 数据线。\n"
+"3. 单击“{button_connect}”并选择平台模式。\n"
+"4. 插入卡带并单击“{button_refresh}”。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3281
+msgid "Reading cartridge data..."
+msgstr "正在读取卡带数据..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3290
+#, python-brace-format
+msgid ""
+"The connection to the device was lost while trying to read the ROM header. "
+"This may happen if the inserted cartridge issues a short circuit or its peak "
+"power draw is too high.\n"
+"\n"
+"As a potential workaround for the latter, you can try hotswapping the "
+"cartridge:\n"
+"1. Remove the cartridge from the device.\n"
+"2. Reconnect the device and select platform mode.\n"
+"3. Then insert the cartridge and click “{button}”."
+msgstr ""
+"尝试读取 ROM 头时与设备的连接丢失。如果插入的卡带发生短路或其峰值功耗过高，可"
+"能会发生这种情况。\n"
+"\n"
+"对于后一种情况，一种可能的解决方法是尝试热插拔卡带：\n"
+"1. 从设备中取出卡带。\n"
+"2. 重新连接设备并选择平台模式。\n"
+"3. 然后插入卡带并单击“{button}”。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3296
+msgid "Invalid response from the device. Please re-connect the USB cable."
+msgstr "来自设备的无效响应。请重新连接 USB 数据线。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3302
+#: ../package/FlashGBX/FlashGBX_GUI.py:3594
+msgid "The cartridge connection is unstable!"
+msgstr "卡带连接不稳定！"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3302
+msgid ""
+"Please clean the cartridge pins, carefully realign the cartridge and then "
+"try again."
+msgstr "请清洁卡带金手指，仔细重新对齐卡带，然后重试。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3335
+#: ../package/FlashGBX/FlashGBX_GUI.py:3468
+#: ../package/FlashGBX/FlashGBX_GUI.py:3500
+msgctxt "Game Data"
+msgid "(No database entry)"
+msgstr "（无数据库条目）"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3345
+#: ../package/FlashGBX/FlashGBX_GUI.py:3483
+msgid "Click here to edit the Real Time Clock register values"
+msgstr "点击此处编辑实时时钟寄存器值"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3373
+#: ../package/FlashGBX/FlashGBX_GUI.py:3520
+msgid "No cartridge connected"
+msgstr "未连接卡带"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3375
+#: ../package/FlashGBX/FlashGBX_GUI.py:3522
+msgid "No ROM data detected"
+msgstr "未检测到 ROM 数据"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3541
+#, python-brace-format
+msgid ""
+"This cartridge uses a mapper that may not be completely supported by the "
+"firmware of the {device_name}. Check for firmware updates."
+msgstr ""
+"此卡带使用的 mapper 可能不被 {device_name} 的固件完全支持。请检查固件更新。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3573
+msgid ""
+"This cartridge may be protected against reading or writing a ROM. If you "
+"don’t want to risk this cartridge to render itself unusable, please do not "
+"try to write a new ROM to it."
+msgstr ""
+"此卡带可能受到保护，禁止读取或写入 ROM。如果您不想冒此卡带变得无法使用的风"
+"险，请不要尝试向其写入新的 ROM。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3594
+msgid ""
+"Please clean the cartridge pins, carefully realign the cartridge for best "
+"results."
+msgstr "请清洁卡带金手指，仔细重新对齐卡带以获得最佳效果。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3622
+msgid ""
+"An error occured while trying to analyze the cartridge and you may need to "
+"physically reconnect the device."
+msgstr "尝试分析卡带时发生错误，您可能需要物理重新连接设备。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3622
+msgid ""
+"This cartridge may not be auto-detectable, please select the flashcart "
+"profile manually."
+msgstr "此卡带可能无法自动检测，请手动选择烧录卡配置。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3652
+msgid "An unknown error occured. Please try again."
+msgstr "发生未知错误。请重试。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3702
+msgid "unknown size"
+msgstr "未知大小"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3702
+#: ../package/FlashGBX/FlashGBX_GUI.py:3704
+#: ../package/FlashGBX/FlashGBX_GUI.py:3706
+#, python-brace-format
+msgid "{batteryless_sram} Location:"
+msgstr "{batteryless_sram} 位置："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3733
+msgctxt "Flashcart Profile: PROFILE NAME (or compatble)"
+msgid "or compatible"
+msgstr "或兼容"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3736
+msgid "Compatible Flashcart Profiles:"
+msgstr "兼容的烧录卡配置："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3777
+#, python-brace-format
+msgid ""
+"For ROM writing, you can give the option called “{option}” a try at your own "
+"risk."
+msgstr "对于 ROM 写入，您可以自行承担风险尝试使用名为“{option}”的选项。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3780
+msgid "not rewritable or not auto-detectable"
+msgstr "不可重写或无法自动检测"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3785
+msgid "Flash ID Check (limited voltage):"
+msgstr "Flash ID 检查（限制电压）："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3793
+msgctxt "Common Flash Interface Data"
+msgid "Not available"
+msgstr "不可用"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3801
+#, python-brace-format
+msgid "{gb_memory_cartridge} Data:"
+msgstr "{gb_memory_cartridge} 数据："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3804
+#: ../package/FlashGBX/FlashGBX_GUI.py:3817
+msgid "Write Timestamp:"
+msgstr "写入时间戳："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3805
+#: ../package/FlashGBX/FlashGBX_GUI.py:3818
+msgid "Write Kiosk ID:"
+msgstr "写入 Kiosk ID："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3806
+msgid "Number of Games:"
+msgstr "游戏数量："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3807
+#: ../package/FlashGBX/FlashGBX_GUI.py:3819
+msgid "Write Counter:"
+msgstr "写入计数器："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3808
+#: ../package/FlashGBX/FlashGBX_GUI.py:3820
+msgid "Cartridge ID:"
+msgstr "卡带 ID："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3812
+msgid "Menu ROM:"
+msgstr "菜单 ROM："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3814
+#, python-brace-format
+msgid "Game {number}:"
+msgstr "游戏 {number}："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3832
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Details"
+msgstr "详情(&D)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3835
+msgctxt "Check Box (& = Keyboard Shortcut)"
+msgid "&Always skip this message"
+msgstr "始终跳过此消息(&A)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3870
+#, python-brace-format
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Try “{generic_type}”"
+msgstr "尝试“{generic_type}”(&T)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3877
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Copy to Clipboard"
+msgstr "复制到剪贴板(&C)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3883
+msgid "&Limit voltage when analyzing Game Boy carts"
+msgstr "分析 Game Boy 卡带时限制电压(&L)"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3883
+#, python-brace-format
+msgid ""
+"No known flashcart profile could be detected. The option “{limit_voltage}” "
+"has been enabled which can cause auto-detection to fail. As it is usually "
+"not recommended to enable this option, do you now want to disable it and try "
+"again?"
+msgstr ""
+"无法检测到已知的烧录卡配置。选项“{limit_voltage}”已启用，这可能导致自动检测失"
+"败。通常不建议启用此选项，您现在是否要禁用它并重试？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3975
+#, python-brace-format
+msgid "at {voltage}V"
+msgstr "在 {voltage}V"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3981
+msgid "Verify Flash"
+msgstr "验证闪存"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3985
+msgid "Write Save Data"
+msgstr "写入存档"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3987
+msgid "Verify Save Data"
+msgstr "验证存档"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3989
+msgid "Analyze Cartridge"
+msgstr "分析卡带"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:3992
+msgid "Failed!"
+msgstr "失败！"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4032
+#, python-brace-format
+msgid "Erasing... This may take up to {seconds} seconds."
+msgstr "擦除中...这可能最多需要 {seconds} 秒。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4034
+msgid "Erasing... This may take some time."
+msgstr "擦除中...这可能需要一些时间。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4042
+msgid "Unlocking flash..."
+msgstr "正在解锁闪存..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4059
+#, python-brace-format
+msgid "Calculating {checksum_type}..."
+msgstr "正在计算 {checksum_type}..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4061
+msgid "Calculating checksums..."
+msgstr "正在计算校验和..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4068
+#, python-brace-format
+msgid "Erasing sector at address {address}..."
+msgstr "正在擦除地址 {address} 处的扇区..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4117
+msgid "Stopped."
+msgstr "已停止。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4165
+msgid "Time left:"
+msgstr "剩余时间："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4202
+msgid "Firmware Updater"
+msgstr "固件更新器"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4203
+msgid "Please select your device."
+msgstr "请选择您的设备。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4206
+msgid "Device Type:"
+msgstr "设备类型："
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4219
+msgid ""
+"FlashGBX currently does not support updating the firmware of your device."
+msgstr "FlashGBX 当前不支持更新您设备的固件。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4234
+msgid "Is a Game Boy Camera cartridge currently inserted?"
+msgstr "当前是否插入了 Game Boy Camera 卡带？"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4242
+msgid "Loading data, please wait..."
+msgstr "正在加载数据，请稍候..."
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4256
+msgid "Please connect to a device first."
+msgstr "请先连接到设备。"
+
+#: ../package/FlashGBX/FlashGBX_GUI.py:4259
+msgid "Please select a platform mode (Game Boy or Game Boy Advance) first."
+msgstr "请先选择平台模式（Game Boy 或 Game Boy Advance）。"
+
+#: ../package/FlashGBX/Flashcart.py:156
+msgid "CFI Error: Couldn’t retrieve buffer size from the cartridge."
+msgstr "CFI 错误：无法从卡带获取缓冲区大小。"
+
+#: ../package/FlashGBX/Flashcart.py:159
+msgid "Buffered write disabled."
+msgstr "缓冲写入已禁用。"
+
+#: ../package/FlashGBX/Flashcart.py:301
+msgid "CFI Error: Couldn’t retrieve sector size map from the cartridge."
+msgstr "CFI 错误：无法从卡带获取扇区大小映射。"
+
+#: ../package/FlashGBX/Flashcart.py:304
+msgid "Sector erase mode disabled."
+msgstr "扇区擦除模式已禁用。"
+
+#: ../package/FlashGBX/Flashcart.py:377 ../package/FlashGBX/Flashcart.py:710
+#: ../package/FlashGBX/Flashcart.py:967
+#, python-brace-format
+msgid ""
+"Erasing the flash chip timed out. The last status register value was {value}."
+msgstr "擦除闪存芯片超时。最后一个状态寄存器值为 {value}。"
+
+#: ../package/FlashGBX/Flashcart.py:378 ../package/FlashGBX/Flashcart.py:711
+#: ../package/FlashGBX/Flashcart.py:824 ../package/FlashGBX/Flashcart.py:968
+#: ../package/FlashGBX/Flashcart.py:1100
+msgid ""
+"Please make sure that the cartridge contacts are clean, and that the "
+"selected flashcart profile and settings are correct."
+msgstr "请确保卡带触点清洁，并且所选的烧录卡配置和设置正确。"
+
+#: ../package/FlashGBX/Flashcart.py:544
+msgid "Warning: No information about the voltage range found in CFI data."
+msgstr "警告：在 CFI 数据中未找到有关电压范围的信息。"
+
+#: ../package/FlashGBX/Flashcart.py:615
+msgid "Error: Trying to parse CFI data resulted in an error."
+msgstr "错误：尝试解析 CFI 数据时出错。"
+
+#: ../package/FlashGBX/Flashcart.py:623
+#, python-brace-format
+msgid "Swapped pins: {pins}"
+msgstr "交换的引脚：{pins}"
+
+#: ../package/FlashGBX/Flashcart.py:624
+#, python-brace-format
+msgid "Device size: {size_hex} ({size_mib})"
+msgstr "设备大小：{size_hex}（{size_mib}）"
+
+#: ../package/FlashGBX/Flashcart.py:625
+#, python-brace-format
+msgid "Voltage: {min_v}–{max_v} V"
+msgstr "电压：{min_v}–{max_v} V"
+
+#: ../package/FlashGBX/Flashcart.py:626 ../package/FlashGBX/Flashcart.py:628
+#: ../package/FlashGBX/Flashcart.py:630
+msgctxt "ROM Write Method"
+msgid "Supported"
+msgstr "支持"
+
+#: ../package/FlashGBX/Flashcart.py:626 ../package/FlashGBX/Flashcart.py:628
+#: ../package/FlashGBX/Flashcart.py:630
+msgctxt "ROM Write Method"
+msgid "Not supported"
+msgstr "不支持"
+
+#: ../package/FlashGBX/Flashcart.py:626
+#, python-brace-format
+msgid "Single write: {val}"
+msgstr "单次写入：{val}"
+
+#: ../package/FlashGBX/Flashcart.py:628 ../package/FlashGBX/Flashcart.py:630
+#, python-brace-format
+msgid "Buffered write: {val}"
+msgstr "缓冲写入：{val}"
+
+#: ../package/FlashGBX/Flashcart.py:631
+#, python-brace-format
+msgid "Chip erase: {avg}–{max} ms"
+msgstr "芯片擦除：{avg}–{max} 毫秒"
+
+#: ../package/FlashGBX/Flashcart.py:632
+#, python-brace-format
+msgid "Sector erase: {avg}–{max} ms"
+msgstr "扇区擦除：{avg}–{max} 毫秒"
+
+#: ../package/FlashGBX/Flashcart.py:633
+#, python-brace-format
+msgid "Sector flags: {flags}"
+msgstr "扇区标志：{flags}"
+
+#: ../package/FlashGBX/Flashcart.py:640
+#, python-brace-format
+msgid "Region {region}: {start}–{end} @ {size} × {count} (alternative)"
+msgstr "区域 {region}：{start}–{end} @ {size} × {count}（备用）"
+
+#: ../package/FlashGBX/Flashcart.py:642
+#, python-brace-format
+msgid "Region {region}: {start}–{end} @ {size} × {count}"
+msgstr "区域 {region}：{start}–{end} @ {size} × {count}"
+
+#: ../package/FlashGBX/Flashcart.py:823
+#, python-brace-format
+msgid ""
+"Erasing the hidden sector timed out. The last status register value was "
+"{value}."
+msgstr "擦除隐藏扇区超时。最后一个状态寄存器值为 {value}。"
+
+#: ../package/FlashGBX/Flashcart.py:1099
+#, python-brace-format
+msgid ""
+"Unlocking the hidden sector timed out. The last status register value was "
+"{value}."
+msgstr "解锁隐藏扇区超时。最后一个状态寄存器值为 {value}。"
+
+#: ../package/FlashGBX/Formatter.py:18 ../package/FlashGBX/Formatter.py:21
+msgctxt "Bytes (short form)"
+msgid "B"
+msgid_plural "B"
+msgstr[0] "B"
+
+#: ../package/FlashGBX/Formatter.py:65
+#, python-brace-format
+msgid "{days} day"
+msgid_plural "{days} days"
+msgstr[0] "{days} 天"
+
+#: ../package/FlashGBX/Formatter.py:67
+#, python-brace-format
+msgid "{hours} hour"
+msgid_plural "{hours} hours"
+msgstr[0] "{hours} 小时"
+
+#: ../package/FlashGBX/Formatter.py:69
+#, python-brace-format
+msgid "{minutes} minute"
+msgid_plural "{minutes} minutes"
+msgstr[0] "{minutes} 分钟"
+
+#: ../package/FlashGBX/Formatter.py:79
+#, python-brace-format
+msgid "{seconds} second"
+msgid_plural "{seconds} seconds"
+msgstr[0] "{seconds} 秒"
+
+#: ../package/FlashGBX/GBMemory.py:319
+#, python-brace-format
+msgid ""
+"Note: The ROM is using a mapper type that may be incompatible with the "
+"{gb_memory_cartridge}."
+msgstr "注意：ROM 使用的 mapper 类型可能与 {gb_memory_cartridge} 不兼容。"
+
+#: ../package/FlashGBX/IniSettings.py:26
+msgid "Can’t access the configuration directory or settings file."
+msgstr "无法访问配置目录或设置文件。"
+
+#: ../package/FlashGBX/IniSettings.py:34
+msgid "Resetting invalid settings file..."
+msgstr "正在重置无效的设置文件..."
+
+#: ../package/FlashGBX/InteractiveConsole.py:18
+msgid "Commands:"
+msgstr "命令："
+
+#: ../package/FlashGBX/InteractiveConsole.py:19
+msgid "Read from ROM region"
+msgstr "从 ROM 区域读取"
+
+#: ../package/FlashGBX/InteractiveConsole.py:20
+msgid "Save last read data to file"
+msgstr "将上次读取的数据保存到文件"
+
+#: ../package/FlashGBX/InteractiveConsole.py:21
+msgid "Write to ROM region (e.g. mapper registers)"
+msgstr "写入 ROM 区域（例如 mapper 寄存器）"
+
+#: ../package/FlashGBX/InteractiveConsole.py:23
+msgid "Read from SRAM or FLASH save region"
+msgstr "从 SRAM 或 FLASH 存储区域读取"
+
+#: ../package/FlashGBX/InteractiveConsole.py:24
+msgid "Write to SRAM or FLASH save region"
+msgstr "写入 SRAM 或 FLASH 存储区域"
+
+#: ../package/FlashGBX/InteractiveConsole.py:25
+msgid "Send commands to FLASH save chip"
+msgstr "向 FLASH 存储芯片发送命令"
+
+#: ../package/FlashGBX/InteractiveConsole.py:26
+msgid "Read from EEPROM save region"
+msgstr "从 EEPROM 存储区域读取"
+
+#: ../package/FlashGBX/InteractiveConsole.py:27
+msgid "Write to EEPROM save region"
+msgstr "写入 EEPROM 存储区域"
+
+#: ../package/FlashGBX/InteractiveConsole.py:29
+msgid "Cartridge Power On"
+msgstr "卡带电源开启"
+
+#: ../package/FlashGBX/InteractiveConsole.py:30
+msgid "Cartridge Power Off"
+msgstr "卡带电源关闭"
+
+#: ../package/FlashGBX/InteractiveConsole.py:31
+msgid "Show this help"
+msgstr "显示此帮助"
+
+#: ../package/FlashGBX/InteractiveConsole.py:32
+msgid "Quit interactive console"
+msgstr "退出交互控制台"
+
+#: ../package/FlashGBX/InteractiveConsole.py:34
+msgid "Multiple commands can be entered on one line, separated by commas."
+msgstr "可以在同一行输入多个命令，用逗号分隔。"
+
+#: ../package/FlashGBX/InteractiveConsole.py:35
+msgid "All addresses, sizes and values are hexadecimal."
+msgstr "所有地址、大小和值均为十六进制。"
+
+#: ../package/FlashGBX/InteractiveConsole.py:63
+#, python-brace-format
+msgid "Device communication error: {error}"
+msgstr "设备通信错误：{error}"
+
+#: ../package/FlashGBX/InteractiveConsole.py:70
+msgid "Invalid command syntax."
+msgstr "无效的命令语法。"
+
+#: ../package/FlashGBX/InteractiveConsole.py:91
+#: ../package/FlashGBX/InteractiveConsole.py:168
+msgid "Invalid input. Use hexadecimal or 8/16-bit binary for the value."
+msgstr "无效输入。请使用十六进制或 8/16 位二进制值。"
+
+#: ../package/FlashGBX/InteractiveConsole.py:94
+#: ../package/FlashGBX/InteractiveConsole.py:171
+#: ../package/FlashGBX/InteractiveConsole.py:182
+#: ../package/FlashGBX/InteractiveConsole.py:233
+#: ../package/FlashGBX/InteractiveConsole.py:242
+#: ../package/FlashGBX/InteractiveConsole.py:253
+msgid "OK"
+msgstr "OK"
+
+#: ../package/FlashGBX/InteractiveConsole.py:102
+#: ../package/FlashGBX/InteractiveConsole.py:147
+#: ../package/FlashGBX/InteractiveConsole.py:179
+#: ../package/FlashGBX/InteractiveConsole.py:194
+msgid "Invalid hexadecimal input."
+msgstr "无效的十六进制输入。"
+
+#: ../package/FlashGBX/InteractiveConsole.py:108
+#: ../package/FlashGBX/InteractiveConsole.py:153
+#: ../package/FlashGBX/InteractiveConsole.py:205
+#: ../package/FlashGBX/InteractiveConsole.py:231
+#: ../package/FlashGBX/InteractiveConsole.py:244
+#: ../package/FlashGBX/InteractiveConsole.py:255
+msgid "ERROR"
+msgstr "错误"
+
+#: ../package/FlashGBX/InteractiveConsole.py:117
+msgid "No data available. Read data first with “r”, “rs” or “re”."
+msgstr "没有可用数据。请先用“r”、“rs”或“re”读取数据。"
+
+#: ../package/FlashGBX/InteractiveConsole.py:121
+msgid "Invalid file path. Path is a directory."
+msgstr "无效的文件路径。路径是一个目录。"
+
+#: ../package/FlashGBX/InteractiveConsole.py:125
+msgid "Invalid file path. Directory does not exist."
+msgstr "无效的文件路径。目录不存在。"
+
+#: ../package/FlashGBX/InteractiveConsole.py:136
+#, python-brace-format
+msgid "Failed to save file: {error}"
+msgstr "保存文件失败：{error}"
+
+#: ../package/FlashGBX/InteractiveConsole.py:138
+#, python-brace-format
+msgid "Saved to {filepath}"
+msgstr "已保存到 {filepath}"
+
+#: ../package/FlashGBX/InteractiveConsole.py:187
+#: ../package/FlashGBX/InteractiveConsole.py:213
+msgid "EEPROM type must be 4 or 64."
+msgstr "EEPROM 类型必须为 4 或 64。"
+
+#: ../package/FlashGBX/InteractiveConsole.py:197
+msgid "EEPROM read requires size to be a multiple of 8 bytes."
+msgstr "EEPROM 读取要求大小为 8 字节的倍数。"
+
+#: ../package/FlashGBX/InteractiveConsole.py:220
+msgid "Invalid input."
+msgstr "无效输入。"
+
+#: ../package/FlashGBX/InteractiveConsole.py:223
+msgid "EEPROM write requires data length to be a multiple of 8 bytes."
+msgstr "EEPROM 写入要求数据长度为 8 字节的倍数。"
+
+#: ../package/FlashGBX/InteractiveConsole.py:238
+#: ../package/FlashGBX/InteractiveConsole.py:249
+msgid "This device does not support cartridge power control."
+msgstr "此设备不支持卡带电源控制。"
+
+#: ../package/FlashGBX/InteractiveConsole.py:258
+msgid "Unknown command. Type “h” for help."
+msgstr "未知命令。输入“h”获取帮助。"
+
+#: ../package/FlashGBX/LK_Device.py:265 ../package/FlashGBX/LK_Device.py:266
+#, python-brace-format
+msgid ""
+"Disconnecting from the device, because a critical error occurred!\n"
+"{error}"
+msgstr ""
+"因发生严重错误，正在断开与设备的连接！\n"
+"{error}"
+
+#: ../package/FlashGBX/LK_Device.py:325 ../package/FlashGBX/LK_Device.py:329
+msgid "Invalid pin index specified:"
+msgstr "指定了无效的引脚索引："
+
+#: ../package/FlashGBX/LK_Device.py:395
+msgid "Connection lost!"
+msgstr "连接丢失！"
+
+#: ../package/FlashGBX/LK_Device.py:432
+msgctxt "Device Type"
+msgid "unknown revision"
+msgstr "未知修订版"
+
+#: ../package/FlashGBX/LK_Device.py:477
+#, python-brace-format
+msgid ""
+"A timeout error has occured at {function_name}() in line {line_number}. "
+"Please make sure that the cartridge contacts are clean, re-connect the "
+"device and try again from the beginning."
+msgstr ""
+"在 {function_name}() 的第 {line_number} 行发生超时错误。请确保卡带触点清洁，"
+"重新连接设备，然后从头开始重试。"
+
+#: ../package/FlashGBX/LK_Device.py:487
+#, python-brace-format
+msgid ""
+"The device reported an error while running {function_name}() in line "
+"{line_number}. Please make sure that the cartridge contacts are clean, re-"
+"connect the device and try again from the beginning."
+msgstr ""
+"设备在运行 {function_name}() 的第 {line_number} 行时报告错误。请确保卡带触点"
+"清洁，重新连接设备，然后从头开始重试。"
+
+#: ../package/FlashGBX/LK_Device.py:497
+#, python-brace-format
+msgid ""
+"A communication error has occured at {function_name}() in line "
+"{line_number}. Please make sure that the cartridge contacts are clean, re-"
+"connect the device and try again from the beginning."
+msgstr ""
+"在 {function_name}() 的第 {line_number} 行发生通信错误。请确保卡带触点清洁，"
+"重新连接设备，然后从头开始重试。"
+
+#: ../package/FlashGBX/LK_Device.py:725
+msgid "An error has occured while writing to the cartridge."
+msgstr "写入卡带时发生错误。"
+
+#: ../package/FlashGBX/LK_Device.py:749
+msgid "Error: No response while trying to communicate with the device."
+msgstr "错误：尝试与设备通信时无响应。"
+
+#: ../package/FlashGBX/LK_Device.py:753
+#, python-brace-format
+msgid ""
+"Error: Bad response “{response}” while trying to communicate with the device."
+msgstr "错误：尝试与设备通信时收到错误响应“{response}”。"
+
+#: ../package/FlashGBX/LK_Device.py:786 ../package/FlashGBX/LK_Device.py:4044
+msgid "This flashcart profile requires at least firmware version L12."
+msgstr "此烧录卡配置至少需要固件版本 L12。"
+
+#: ../package/FlashGBX/LK_Device.py:795
+msgid "Power cycle required"
+msgstr "需要电源循环"
+
+#: ../package/FlashGBX/LK_Device.py:796
+#, python-brace-format
+msgid ""
+"To continue, please re-connect the USB cable of your {device_name} on port "
+"{device_port} now."
+msgstr ""
+"要继续，请立即在端口 {device_port} 上重新连接您的 {device_name} 的 USB 数据"
+"线。"
+
+#: ../package/FlashGBX/LK_Device.py:943
+msgid ""
+"Error: The firmware no longer responds correctly. Please re-connect the "
+"device."
+msgstr "错误：固件不再正确响应。请重新连接设备。"
+
+#: ../package/FlashGBX/LK_Device.py:953
+#, python-brace-format
+msgid "Error: Invalid mode {mode}"
+msgstr "错误：无效模式 {mode}"
+
+#: ../package/FlashGBX/LK_Device.py:1082
+msgid "Error: No mode was set."
+msgstr "错误：未设置模式。"
+
+#: ../package/FlashGBX/LK_Device.py:1111 ../package/FlashGBX/LK_Device.py:1221
+msgctxt "Game Data"
+msgid "Not available"
+msgstr "不可用"
+
+#: ../package/FlashGBX/LK_Device.py:1125
+msgctxt "Game Data"
+msgid "Invalid RTC data"
+msgstr "无效的 RTC 数据"
+
+#: ../package/FlashGBX/LK_Device.py:1147 ../package/FlashGBX/LK_Device.py:3116
+#, python-brace-format
+msgid ""
+"An error occured while trying to read the hidden sector data of the "
+"{gb_memory_cartridge}."
+msgstr "尝试读取 {gb_memory_cartridge} 的隐藏扇区数据时发生错误。"
+
+#: ../package/FlashGBX/LK_Device.py:1218
+msgid ""
+"Note: This cartridge may not be fully compatible with your GBFlash hardware "
+"revision. Upgrade to v1.3 or newer for better compatibility."
+msgstr ""
+"注意：此卡带可能与您的 GBFlash 硬件修订版不完全兼容。升级到 v1.3 或更新版本以"
+"获得更好的兼容性。"
+
+#: ../package/FlashGBX/LK_Device.py:1310
+msgid "Detecting ROM..."
+msgstr "正在检测 ROM..."
+
+#: ../package/FlashGBX/LK_Device.py:1327
+msgid "Detecting Flash..."
+msgstr "正在检测闪存..."
+
+#: ../package/FlashGBX/LK_Device.py:1347
+#, python-brace-format
+msgid "Detecting {gb_memory}..."
+msgstr "正在检测 {gb_memory}..."
+
+#: ../package/FlashGBX/LK_Device.py:1373
+msgid "Detecting save type..."
+msgstr "正在检测存档类型..."
+
+#: ../package/FlashGBX/LK_Device.py:1469 ../package/FlashGBX/LK_Device.py:1474
+msgid "Unknown FLASH save chip"
+msgstr "未知 FLASH 存储芯片"
+
+#: ../package/FlashGBX/LK_Device.py:1471
+#, python-brace-format
+msgid "Error: Couldn’t check save type with FLASH save ID {flash_save_id}"
+msgstr "错误：无法使用 FLASH 存储 ID {flash_save_id} 检查存档类型"
+
+#: ../package/FlashGBX/LK_Device.py:1650
+msgid "Unknown flash chip ID"
+msgstr "未知闪存芯片 ID"
+
+#: ../package/FlashGBX/LK_Device.py:1883 ../package/FlashGBX/LK_Device.py:2140
+#: ../package/FlashGBX/LK_Device.py:2170
+#, python-brace-format
+msgid ""
+"Flash write error (response = {response}) in iteration {iteration} while "
+"trying to write {length} bytes"
+msgstr ""
+"尝试写入 {length} 字节时，在第 {iteration} 次迭代中发生闪存写入错误（响应 = "
+"{response}）"
+
+#: ../package/FlashGBX/LK_Device.py:1904
+#, python-brace-format
+msgid ""
+"Flash write timeout (response = {response}) in iteration {iteration} while "
+"trying to write {length} bytes"
+msgstr ""
+"尝试写入 {length} 字节时，在第 {iteration} 次迭代中发生闪存写入超时（响应 = "
+"{response}）"
+
+#: ../package/FlashGBX/LK_Device.py:2222
+#, python-brace-format
+msgid ""
+"EEPROM write error (response = {response}) in iteration {iteration} while "
+"trying to write {length} bytes"
+msgstr ""
+"尝试写入 {length} 字节时，在第 {iteration} 次迭代中发生 EEPROM 写入错误（响"
+"应 = {response}）"
+
+#: ../package/FlashGBX/LK_Device.py:2775 ../package/FlashGBX/LK_Device.py:4033
+#, python-brace-format
+msgid ""
+"Note: This flashcart profile may not be fully compatible with your "
+"{device_name} running an old or legacy firmware version."
+msgstr ""
+"注意：此烧录卡配置可能与运行旧版或传统固件版本的 {device_name} 不完全兼容。"
+
+#: ../package/FlashGBX/LK_Device.py:2796 ../package/FlashGBX/LK_Device.py:3300
+#: ../package/FlashGBX/LK_Device.py:4153
+#, python-brace-format
+msgid ""
+"This cartridge uses a mapper that is not supported by FlashGBX using your "
+"{device_name}."
+msgstr "此卡带使用的 mapper 不被 FlashGBX 与您的 {device_name} 的组合所支持。"
+
+#: ../package/FlashGBX/LK_Device.py:2930
+#, python-brace-format
+msgid ""
+"Note: This cartridge may not be fully compatible with your {device_name}."
+msgstr "注意：此卡带可能与您的 {device_name} 不完全兼容。"
+
+#: ../package/FlashGBX/LK_Device.py:3042
+#, python-brace-format
+msgid "Note: Incomplete transfer detected. Resuming from {address}..."
+msgstr "注意：检测到传输不完整。将从 {address} 处恢复..."
+
+#: ../package/FlashGBX/LK_Device.py:3052
+#, python-brace-format
+msgid "Buffer size adjusted to {size} bytes."
+msgstr "缓冲区大小已调整为 {size} 字节。"
+
+#: ../package/FlashGBX/LK_Device.py:3064
+msgid ""
+"An error occured while reading from the cartridge. When connecting the "
+"device, avoid passive USB hubs and try different USB ports/cables."
+msgstr ""
+"从卡带读取时发生错误。连接设备时，请避免使用无源 USB 集线器，并尝试不同的 "
+"USB 端口/数据线。"
+
+#: ../package/FlashGBX/LK_Device.py:3170
+msgid "ROM checksum"
+msgstr "ROM 校验和"
+
+#: ../package/FlashGBX/LK_Device.py:3194
+msgid "Error querying the flash save chip."
+msgstr "查询闪存存储芯片时出错。"
+
+#: ../package/FlashGBX/LK_Device.py:3207
+msgid "MD5 hash"
+msgstr "MD5 哈希"
+
+#: ../package/FlashGBX/LK_Device.py:3209
+msgid "SHA-1 hash"
+msgstr "SHA-1 哈希"
+
+#: ../package/FlashGBX/LK_Device.py:3211
+msgid "SHA-256 hash"
+msgstr "SHA-256 哈希"
+
+#: ../package/FlashGBX/LK_Device.py:3213
+msgid "CRC32 checksum"
+msgstr "CRC32 校验和"
+
+#: ../package/FlashGBX/LK_Device.py:3400
+msgid "Couldn’t detect the save data flash chip type."
+msgstr "无法检测存档数据闪存芯片类型。"
+
+#: ../package/FlashGBX/LK_Device.py:3420
+#, python-brace-format
+msgid ""
+"Couldn’t detect the DACS flash chip.\n"
+"Unknown Flash ID: {flash_id}"
+msgstr ""
+"无法检测 DACS 闪存芯片。\n"
+"未知 Flash ID：{flash_id}"
+
+#: ../package/FlashGBX/LK_Device.py:3616
+msgid "Error: Inconsistent reads detected."
+msgstr "错误：检测到读取不一致。"
+
+#: ../package/FlashGBX/LK_Device.py:3620
+msgid ""
+"Failed to read save data consistently. Please ensure that the cartridge "
+"contacts are clean."
+msgstr "无法一致地读取存档数据。请确保卡带触点清洁。"
+
+#: ../package/FlashGBX/LK_Device.py:3670
+#, python-brace-format
+msgid ""
+"Error: Save data flash sector at {address} didn’t erase successfully "
+"(SR={status_register})."
+msgstr ""
+"错误：地址 {address} 处的存档数据闪存扇区未成功擦除（SR={status_register}）。"
+
+#: ../package/FlashGBX/LK_Device.py:3727 ../package/FlashGBX/LK_Device.py:3735
+msgid ""
+"An error occured while writing to the DACS cartridge. Please make sure that "
+"the cartridge contacts are clean, re-connect the device and try again from "
+"the beginning."
+msgstr ""
+"写入 DACS 卡带时发生错误。请确保卡带触点清洁，重新连接设备，然后从头开始重"
+"试。"
+
+#: ../package/FlashGBX/LK_Device.py:3872
+msgid ""
+"The save data was written completely, but didn’t pass the verification check."
+msgstr "存档数据已完全写入，但未通过验证检查。"
+
+#: ../package/FlashGBX/LK_Device.py:3881
+msgid "more than 10 differences found"
+msgstr "发现超过 10 处差异"
+
+#: ../package/FlashGBX/LK_Device.py:3885
+#, python-brace-format
+msgid ""
+"The save data was written completely, but {count} byte ({percent}%) didn’t "
+"pass the verification check."
+msgid_plural ""
+"The save data was written completely, but {count} bytes ({percent}%) didn’t "
+"pass the verification check."
+msgstr[0] "存档数据已完全写入，但有 {count} 字节（{percent}%）未通过验证检查。"
+
+#: ../package/FlashGBX/LK_Device.py:3985
+msgid ""
+"Note: The last 256 bytes of this 32 MiB ROM will not be written as this area "
+"is reserved by the EEPROM save type."
+msgstr ""
+"注意：此 32 MiB ROM 的最后 256 字节将不会被写入，因为此区域被 EEPROM 存档类型"
+"保留。"
+
+#: ../package/FlashGBX/LK_Device.py:4009
+msgctxt "Flashcart Profile"
+msgid "Unknown"
+msgstr "未知"
+
+#: ../package/FlashGBX/LK_Device.py:4015
+msgid "This flashcart profile requires at least firmware version L2."
+msgstr "此烧录卡配置至少需要固件版本 L2。"
+
+#: ../package/FlashGBX/LK_Device.py:4020
+#, python-brace-format
+msgid ""
+"Note: Update your {device_name} firmware to version L3 or higher for a "
+"better transfer rate with this flashcart profile."
+msgstr ""
+"注意：将您的 {device_name} 固件更新到 L3 或更高版本，可在此烧录卡配置下获得更"
+"好的传输速率。"
+
+#: ../package/FlashGBX/LK_Device.py:4025
+msgid "This flashcart profile requires at least firmware version L5."
+msgstr "此烧录卡配置至少需要固件版本 L5。"
+
+#: ../package/FlashGBX/LK_Device.py:4028
+#, python-brace-format
+msgid ""
+"Note: Update your {device_name} firmware to version L5 or higher for a "
+"better transfer rate with this flashcart profile."
+msgstr ""
+"注意：将您的 {device_name} 固件更新到 L5 或更高版本，可在此烧录卡配置下获得更"
+"好的传输速率。"
+
+#: ../package/FlashGBX/LK_Device.py:4038
+#, python-brace-format
+msgid ""
+"Note: This flashcart profile may not be fully compatible with your "
+"{device_name} until updated to a newer firmware version."
+msgstr ""
+"注意：在更新到更新的固件版本之前，此烧录卡配置可能与您的 {device_name} 不完全"
+"兼容。"
+
+#: ../package/FlashGBX/LK_Device.py:4042
+msgid ""
+"This flashcart profile requires a different firmware version. Please update "
+"your GBxCart RW firmware using the older FlashGBX v4.3 and try again."
+msgstr ""
+"此烧录卡配置需要不同的固件版本。请使用较旧的 FlashGBX v4.3 更新您的 GBxCart "
+"RW 固件，然后重试。"
+
+#: ../package/FlashGBX/LK_Device.py:4049
+msgid "This flashcart profile requires at least firmware version L14."
+msgstr "此烧录卡配置至少需要固件版本 L14。"
+
+#: ../package/FlashGBX/LK_Device.py:4107
+msgid ""
+"Note: Chip erase mode is not supported for this flashcart profile. Sector "
+"erase mode will be used."
+msgstr "注意：此烧录卡配置不支持芯片擦除模式。将使用扇区擦除模式。"
+
+#: ../package/FlashGBX/LK_Device.py:4200
+#, python-brace-format
+msgid ""
+"An error occured while trying to generate the hidden sector data for the "
+"{gb_memory_cartridge}."
+msgstr "尝试为 {gb_memory_cartridge} 生成隐藏扇区数据时发生错误。"
+
+#: ../package/FlashGBX/LK_Device.py:4204
+#, python-brace-format
+msgid ""
+"The {gb_memory_cartridge} requires extra hidden sector data. As it couldn’t "
+"be auto-generated, please provide your own at the following path:"
+msgstr ""
+"{gb_memory_cartridge} 需要额外的隐藏扇区数据。由于无法自动生成，请自行在以下"
+"路径提供："
+
+#: ../package/FlashGBX/LK_Device.py:4236 ../package/FlashGBX/LK_Device.py:4291
+msgid "This flashcart profile is currently not supported for ROM writing."
+msgstr "此烧录卡配置目前不支持 ROM 写入。"
+
+#: ../package/FlashGBX/LK_Device.py:4386
+#, python-brace-format
+msgid ""
+"Note: This cartridge’s Flash ID ({flash_id}) doesn’t match the flashcart "
+"profile selection."
+msgstr "注意：此卡带的 Flash ID（{flash_id}）与所选烧录卡配置不匹配。"
+
+#: ../package/FlashGBX/LK_Device.py:4445
+msgid ""
+"No flash sectors were found that would need to be updated for delta flashing."
+msgstr "未找到需要为增量烧录更新的闪存扇区。"
+
+#: ../package/FlashGBX/LK_Device.py:4491
+msgid "No erase method available."
+msgstr "没有可用的擦除方法。"
+
+#: ../package/FlashGBX/LK_Device.py:4527
+msgid ""
+"Couldn’t start writing ROM because the flash cart couldn’t be detected "
+"properly."
+msgstr "无法开始写入 ROM，因为无法正确检测到烧录卡。"
+
+#: ../package/FlashGBX/LK_Device.py:4753
+msgctxt "Status Register"
+msgid "Unknown"
+msgstr "未知"
+
+#: ../package/FlashGBX/LK_Device.py:4778
+msgctxt "Status Register"
+msgid "Timeout"
+msgstr "超时"
+
+#: ../package/FlashGBX/LK_Device.py:4788 ../package/FlashGBX/LK_Device.py:4834
+#, python-brace-format
+msgid ""
+"An error occured while writing {buffer_len} bytes at position {buffer_pos} "
+"({file_size}). Please re-connect the device and try again from the beginning."
+msgstr ""
+"在位置 {buffer_pos}（{file_size}）写入 {buffer_len} 字节时发生错误。请重新连"
+"接设备，然后从头开始重试。"
+
+#: ../package/FlashGBX/LK_Device.py:4800 ../package/FlashGBX/LK_Device.py:4823
+#: ../package/FlashGBX/LK_Device.py:4849
+msgid "Status Register:"
+msgstr "状态寄存器："
+
+#: ../package/FlashGBX/LK_Device.py:4812
+#, python-brace-format
+msgid ""
+"Unstable connection detected while writing {buffer_len} bytes in iteration "
+"{iteration} at position {buffer_pos} ({file_size}). Please re-connect the "
+"device and try again from the beginning."
+msgstr ""
+"在位置 {buffer_pos}（{file_size}）的第 {iteration} 次迭代中写入 {buffer_len} "
+"字节时，检测到连接不稳定。请重新连接设备，然后从头开始重试。"
+
+#: ../package/FlashGBX/LK_Device.py:4817
+msgid ""
+"Troubleshooting advice:\n"
+"- Clean cartridge contacts\n"
+"- Check soldering if it’s a DIY cartridge\n"
+"- Avoid passive USB hubs and try different USB ports/cables"
+msgstr ""
+"故障排除建议：\n"
+"- 清洁卡带触点\n"
+"- 如果是 DIY 卡带，检查焊接\n"
+"- 避免使用无源 USB 集线器，尝试不同的 USB 端口/数据线"
+
+#: ../package/FlashGBX/LK_Device.py:4839
+#, python-brace-format
+msgid ""
+"Troubleshooting advice:\n"
+"- Clean cartridge contacts\n"
+"- Check soldering if it’s a DIY cartridge\n"
+"- Avoid passive USB hubs and try different USB ports/cables\n"
+"- Check cartridge ROM storage size (at least {rom_size} is required)"
+"{errmsg}\n"
+"- Check flashcart profile used: {cart_name}{enable_pullup_wr_str}\n"
+"- The cartridge may also be incompatible with your {device_name} device"
+msgstr ""
+"故障排除建议：\n"
+"- 清洁卡带触点\n"
+"- 如果是 DIY 卡带，检查焊接\n"
+"- 避免使用无源 USB 集线器，尝试不同的 USB 端口/数据线\n"
+"- 检查卡带 ROM 存储大小（至少需要 {rom_size}）{errmsg}\n"
+"- 检查使用的烧录卡配置：{cart_name}{enable_pullup_wr_str}\n"
+"- 卡带也可能与您的 {device_name} 设备不兼容"
+
+#: ../package/FlashGBX/LK_Device.py:4858
+#, python-brace-format
+msgid "Write error! Retrying from {address}..."
+msgstr "写入错误！从 {address} 处重试..."
+
+#: ../package/FlashGBX/LK_Device.py:4874
+#, python-brace-format
+msgid ""
+"A critical connection error occured while writing {buffer_len} bytes at "
+"position {buffer_pos} ({file_size}). Please re-connect the device and try "
+"again from the beginning."
+msgstr ""
+"在位置 {buffer_pos}（{file_size}）写入 {buffer_len} 字节时发生严重连接错误。"
+"请重新连接设备，然后从头开始重试。"
+
+#: ../package/FlashGBX/LK_Device.py:4886
+msgid "The erroneous process has been stopped."
+msgstr "错误进程已停止。"
+
+#: ../package/FlashGBX/LK_Device.py:4918
+msgid ""
+"An error occured while writing the hidden sector. Please make sure that the "
+"cartridge contacts are clean, re-connect the device and try again from the "
+"beginning."
+msgstr ""
+"写入隐藏扇区时发生错误。请确保卡带触点清洁，重新连接设备，然后从头开始重试。"
+
+#: ../package/FlashGBX/LK_Device.py:5093
+#, python-brace-format
+msgid "Error: Couldn’t update write-protected file “{file}”"
+msgstr "错误：无法更新受写保护的文件“{file}”"
+
+#: ../package/FlashGBX/LK_Device.py:5161
+msgid "Retry at 5V?"
+msgstr "使用 5V 重试？"
+
+#: ../package/FlashGBX/LK_Device.py:5162
+msgid ""
+"Writing at 3.3V failed. Do you want to retry at 5V? Some cartridges of the "
+"same kind require 5V for successful writing, but please note that 5V can be "
+"unsafe for some flash chips."
+msgstr ""
+"在 3.3V 下写入失败。是否要在 5V 下重试？某些同类卡带需要 5V 才能成功写入，但"
+"请注意 5V 对某些闪存芯片可能不安全。"
+
+#: ../package/FlashGBX/LK_Device.py:5175 ../package/FlashGBX/LK_Device.py:5182
+msgid "Note: Writing at 3.3V failed. Retrying at 5V..."
+msgstr "注意：在 3.3V 下写入失败。正在 5V 下重试..."
+
+#: ../package/FlashGBX/LK_Device.py:5176 ../package/FlashGBX/LK_Device.py:5183
+msgid "Switching voltage..."
+msgstr "正在切换电压..."
+
+#: ../package/FlashGBX/LK_Device.py:5198
+msgid "Connection timed out. Please reconnect the device."
+msgstr "连接超时。请重新连接设备。"
+
+#: ../package/FlashGBX/LK_Device.py:5202
+msgid "Connection closed."
+msgstr "连接已关闭。"
+
+#: ../package/FlashGBX/Logging.py:102
+#, python-brace-format
+msgid "The debug log was written to {logfile}"
+msgstr "调试日志已写入 {logfile}"
+
+#: ../package/FlashGBX/Mapper.py:50
+#, python-brace-format
+msgid "Unknown mapper type {id}"
+msgstr "未知的 mapper 类型 {id}"
+
+#: ../package/FlashGBX/Mapper.py:359
+msgctxt "Real Time Clock Feature"
+msgid "Not available"
+msgstr "不可用"
+
+#: ../package/FlashGBX/Mapper.py:571 ../package/FlashGBX/Mapper.py:1212
+#: ../package/FlashGBX/Mapper.py:1451 ../package/FlashGBX/Mapper.py:1950
+#: ../package/FlashGBX/Mapper.py:2026
+msgid "Error: Couldn’t update the RTC register values."
+msgstr "错误：无法更新 RTC 寄存器值。"
+
+#: ../package/FlashGBX/Mapper.py:606
+msgid "Invalid RTC state"
+msgstr "无效的 RTC 状态"
+
+#: ../package/FlashGBX/Mapper.py:609 ../package/FlashGBX/Mapper.py:2048
+msgid "Not available"
+msgstr "不可用"
+
+#: ../package/FlashGBX/Mapper.py:612
+#, python-brace-format
+msgid "{days} day, {hours}:{minutes}:{seconds}"
+msgid_plural "{days} days, {hours}:{minutes}:{seconds}"
+msgstr[0] "{days} 天, {hours}:{minutes}:{seconds}"
+
+#: ../package/FlashGBX/Mapper.py:968
+#, python-brace-format
+msgid "Failed to read the hidden sector data of the {gb_memory_cartridge}."
+msgstr "读取 {gb_memory_cartridge} 的隐藏扇区数据失败。"
+
+#: ../package/FlashGBX/Mapper.py:1229
+#, python-brace-format
+msgid "{days} day, {hours}:{minutes}"
+msgid_plural "{days} days, {hours}:{minutes}"
+msgstr[0] "{days} 天, {hours}:{minutes}"
+
+#: ../package/FlashGBX/Mapper.py:1252
+#, python-brace-format
+msgid "Error: Couldn’t enable the {mapper_name} mapper."
+msgstr "错误：无法启用 {mapper_name} mapper。"
+
+#: ../package/FlashGBX/Mapper.py:1521
+#, python-brace-format
+msgctxt "ᴸ means leap year"
+msgid "{years} yearᴸ"
+msgid_plural "{years} yearsᴸ"
+msgstr[0] "{years} 年ᴸ"
+
+#: ../package/FlashGBX/Mapper.py:1523
+#, python-brace-format
+msgid "{years} year"
+msgid_plural "{years} years"
+msgstr[0] "{years} 年"
+
+#: ../package/FlashGBX/Mapper.py:1524
+#, python-brace-format
+msgid "{years_label}, {month}-{day}, {hours}:{minutes}:{seconds}"
+msgstr "{years_label}, {month}-{day}, {hours}:{minutes}:{seconds}"
+
+#: ../package/FlashGBX/Mapper.py:2050
+msgid "Not available / Battery dry"
+msgstr "不可用 / 电池耗尽"
+
+#: ../package/FlashGBX/Mapper.py:2077
+msgid "Invalid RTC data"
+msgstr "无效的 RTC 数据"
+
+#: ../package/FlashGBX/Mapper.py:2080
+#, python-brace-format
+msgid "20{year}-{month}-{day} {hours}:{minutes}:{seconds}"
+msgstr "20{year}-{month}-{day} {hours}:{minutes}:{seconds}"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:45
+msgid "GB Camera Album Viewer"
+msgstr "GB Camera 相册查看器"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:57
+msgid "Options"
+msgstr "选项"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:61
+msgid "Color Palette:"
+msgstr "调色板："
+
+#: ../package/FlashGBX/PocketCameraWindow.py:66
+msgid "Grayscale"
+msgstr "灰度"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:69
+msgid "Game Boy Color (Pocket Camera)"
+msgstr "Game Boy Color（Pocket Camera）"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:70
+msgid "Game Boy Color (Game Boy Camera Gold)"
+msgstr "Game Boy Color（Game Boy Camera Gold）"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:71
+msgid "Game Boy Color (Game Boy Camera)"
+msgstr "Game Boy Color（Game Boy Camera）"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:80
+msgid "Saved Picture Zoom:"
+msgstr "保存图片缩放："
+
+#: ../package/FlashGBX/PocketCameraWindow.py:88
+msgctxt "Check Box (& = Keyboard Shortcut)"
+msgid "Save With &Frame"
+msgstr "带相框保存(&F)"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:97
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Open Save Data File"
+msgstr "打开存档文件(&O)"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:109
+msgid "Preview"
+msgstr "预览"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:121
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Save This Picture"
+msgstr "保存此图片(&S)"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:125
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "Save &All Pictures"
+msgstr "保存所有图片(&A)"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:134
+msgid "Photo Album"
+msgstr "相册"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:155
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Game Face"
+msgstr "游戏脸(&G)"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:159
+msgctxt "Button (& = Keyboard Shortcut)"
+msgid "&Last Seen Image"
+msgstr "最后看到的图像(&L)"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:241
+msgid ""
+"A “Photo!” save file was detected. Please select the roll of pictures that "
+"you would like to load."
+msgstr "检测到“Photo!”存档文件。请选择您要加载的照片卷。"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:243
+msgid "Film roll:"
+msgstr "胶卷："
+
+#: ../package/FlashGBX/PocketCameraWindow.py:243
+msgid "Current Save Data"
+msgstr "当前存档数据"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:243
+#, python-brace-format
+msgid "“{flash_directory}” Slot {number}"
+msgstr "“{flash_directory}” 插槽 {number}"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:262
+msgid "The save data file couldn’t be loaded."
+msgstr "无法加载存档文件。"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:272
+msgid "An error occured while trying to load the save data file."
+msgstr "尝试加载存档文件时发生错误。"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:288
+msgid "Open GB Camera Save Data File"
+msgstr "打开 GB Camera 存档文件"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:304
+msgid "Export all pictures"
+msgstr "导出所有图片"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:304
+#: ../package/FlashGBX/PocketCameraWindow.py:376
+msgid "PNG files"
+msgstr "PNG 文件"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:304
+#: ../package/FlashGBX/PocketCameraWindow.py:376
+msgid "BMP files"
+msgstr "BMP 文件"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:304
+#: ../package/FlashGBX/PocketCameraWindow.py:376
+msgid "GIF files"
+msgstr "GIF 文件"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:304
+#: ../package/FlashGBX/PocketCameraWindow.py:376
+msgid "JPEG files"
+msgstr "JPEG 文件"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:304
+#: ../package/FlashGBX/PocketCameraWindow.py:376
+msgid "All files"
+msgstr "所有文件"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:311
+msgid ""
+"There are already pictures that use the same file names. If you continue, "
+"these files will be overwritten."
+msgstr "已有使用相同文件名的图片。如果您继续，这些文件将被覆盖。"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:350
+msgid ""
+"This picture was marked as “deleted” and may be overwritten when you take "
+"new pictures."
+msgstr "此图片已被标记为“已删除”，在您拍摄新照片时可能会被覆盖。"
+
+#: ../package/FlashGBX/PocketCameraWindow.py:376
+msgid "Save Photo"
+msgstr "保存照片"
+
+#: ../package/FlashGBX/RomFileAGB.py:216
+msgid "Error: Database for Game Boy Advance titles is corrupted."
+msgstr "错误：Game Boy Advance 游戏数据库已损坏。"
+
+#: ../package/FlashGBX/RomFileAGB.py:231 ../package/FlashGBX/RomFileDMG.py:470
+#, python-brace-format
+msgid "No database entry found for this title (Header SHA1: {sha1})"
+msgstr "未找到此游戏的数据库条目（头部 SHA1：{sha1}）"
+
+#: ../package/FlashGBX/RomFileAGB.py:233
+#, python-brace-format
+msgid "Error: Database for Game Boy Advance titles not found at {path}"
+msgstr "错误：在 {path} 未找到 Game Boy Advance 游戏数据库"
+
+#: ../package/FlashGBX/RomFileDMG.py:445
+#, python-brace-format
+msgid "Warning: Unknown mapper type value {mapper}"
+msgstr "警告：未知的 mapper 类型值 {mapper}"
+
+#: ../package/FlashGBX/RomFileDMG.py:465
+msgid "Error: Database for Game Boy titles is corrupted."
+msgstr "错误：Game Boy 游戏数据库已损坏。"
+
+#: ../package/FlashGBX/RomFileDMG.py:472
+#, python-brace-format
+msgid "Error: Database for Game Boy titles not found at {path}"
+msgstr "错误：在 {path} 未找到 Game Boy 游戏数据库"
+
+#: ../package/FlashGBX/RomFileDMG.py:534
+#, python-brace-format
+msgid ""
+"Warning: Unhandled ISX record type {type} found. Converted ROM may not be "
+"working correctly."
+msgstr ""
+"警告：发现未处理的 ISX 记录类型 {type}。转换后的 ROM 可能无法正常工作。"
+
+#: ../package/FlashGBX/RomFileDMG.py:545
+msgid "Error: Couldn’t convert ISX file correctly."
+msgstr "错误：无法正确转换 ISX 文件。"
+
+#: ../package/FlashGBX/UserInputDialog.py:24
+msgid "&OK"
+msgstr "确定(&O)"
+
+#: ../package/FlashGBX/UserInputDialog.py:25
+msgid "&Cancel"
+msgstr "取消(&C)"
+
+#: ../package/FlashGBX/hw_GBFlash.py:57 ../package/FlashGBX/hw_GBxCartRW.py:93
+#: ../package/FlashGBX/hw_GameBub.py:65 ../package/FlashGBX/hw_JoeyJr.py:60
+#, python-brace-format
+msgid ""
+"Couldn’t communicate with the {device_name} on port {port}. Please "
+"disconnect and reconnect the device, then try again."
+msgstr ""
+"无法与端口 {port} 上的 {device_name} 通信。请断开并重新连接设备，然后重试。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:65 ../package/FlashGBX/hw_GBxCartRW.py:96
+#: ../package/FlashGBX/hw_JoeyJr.py:74
+#, python-brace-format
+msgid ""
+"Note: The {device_name} on port {port} is running a firmware version that is "
+"newer than what this version of FlashGBX was developed to work with, so "
+"errors may occur."
+msgstr ""
+"注意：端口 {port} 上的 {device_name} 运行的固件版本比此版本 FlashGBX 开发时所"
+"针对的版本更新，因此可能会发生错误。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:148 ../package/FlashGBX/hw_JoeyJr.py:193
+msgid "unverified"
+msgstr "未验证"
+
+#: ../package/FlashGBX/hw_GBFlash.py:155 ../package/FlashGBX/hw_GameBub.py:144
+#: ../package/FlashGBX/hw_JoeyJr.py:211
+#, python-brace-format
+msgid "{device_name} – Firmware {fw_version} ({timestamp}) on {port}"
+msgstr "{device_name} – 固件 {fw_version}（{timestamp}）于 {port}"
+
+#: ../package/FlashGBX/hw_GBFlash.py:157
+#: ../package/FlashGBX/hw_GBxCartRW.py:256
+#: ../package/FlashGBX/hw_GBxCartRW.py:261
+#: ../package/FlashGBX/hw_GameBub.py:146 ../package/FlashGBX/hw_JoeyJr.py:213
+#, python-brace-format
+msgid "{device_name} – Firmware {fw_version} ({port})"
+msgstr "{device_name} – 固件 {fw_version}（{port}）"
+
+#: ../package/FlashGBX/hw_GBFlash.py:213 ../package/FlashGBX/hw_JoeyJr.py:270
+msgid "Disconnecting..."
+msgstr "正在断开连接..."
+
+#: ../package/FlashGBX/hw_GBFlash.py:233
+msgid "unregistered"
+msgstr "未注册"
+
+#: ../package/FlashGBX/hw_GBFlash.py:237
+msgid ""
+"Your GBFlash device reported a registration error, which means it may be an "
+"illegitimate clone."
+msgstr "您的 GBFlash 设备报告了注册错误，这意味着它可能是一个不合法的克隆品。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:237
+msgid ""
+"The device’s integrated piracy detection may limit the device in performance "
+"and functionality until proper registration. The FlashGBX software has no "
+"control over this."
+msgstr ""
+"设备的集成式盗版检测可能会限制设备的性能和功能，直到正确注册。FlashGBX 软件对"
+"此无法控制。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:349
+#: ../package/FlashGBX/hw_GBxCartRW.py:382
+#: ../package/FlashGBX/hw_GBxCartRW.py:385
+#: ../package/FlashGBX/hw_GBxCartRW.py:395 ../package/FlashGBX/hw_JoeyJr.py:549
+msgid "The firmware update file is corrupted."
+msgstr "固件更新文件已损坏。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:352
+#: ../package/FlashGBX/hw_GBxCartRW.py:413 ../package/FlashGBX/hw_JoeyJr.py:407
+msgid "Connecting..."
+msgstr "正在连接..."
+
+#: ../package/FlashGBX/hw_GBFlash.py:384
+#: ../package/FlashGBX/hw_GBxCartRW.py:422
+msgid "Updating firmware..."
+msgstr "正在更新固件..."
+
+#: ../package/FlashGBX/hw_GBFlash.py:410 ../package/FlashGBX/hw_GBFlash.py:452
+msgid "No response from device."
+msgstr "设备无响应。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:413
+msgid "Incorrect sequence number."
+msgstr "序列号不正确。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:417
+msgid "Incorrect command."
+msgstr "命令不正确。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:421
+msgid "Incorrect data packet number."
+msgstr "数据包编号不正确。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:425
+msgid "Write failed."
+msgstr "写入失败。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:430
+#: ../package/FlashGBX/hw_GBxCartRW.py:444
+#: ../package/FlashGBX/hw_GBxCartRW.py:1110
+#: ../package/FlashGBX/hw_GBxCartRW.py:1143
+#: ../package/FlashGBX/hw_JoeyJr.py:351 ../package/FlashGBX/hw_JoeyJr.py:366
+#: ../package/FlashGBX/hw_JoeyJr.py:465
+msgid "Updating firmware... Do not unplug the device!"
+msgstr "正在更新固件...请勿拔下设备！"
+
+#: ../package/FlashGBX/hw_GBFlash.py:455
+#: ../package/FlashGBX/hw_GBxCartRW.py:437
+msgid "Update failed!"
+msgstr "更新失败！"
+
+#: ../package/FlashGBX/hw_GBFlash.py:499
+#: ../package/FlashGBX/hw_GBxCartRW.py:488 ../package/FlashGBX/hw_JoeyJr.py:509
+msgid "Current Firmware"
+msgstr "当前固件"
+
+#: ../package/FlashGBX/hw_GBFlash.py:504
+#: ../package/FlashGBX/hw_GBxCartRW.py:493 ../package/FlashGBX/hw_JoeyJr.py:514
+msgid "Device:"
+msgstr "设备："
+
+#: ../package/FlashGBX/hw_GBFlash.py:512 ../package/FlashGBX/hw_GBFlash.py:530
+#: ../package/FlashGBX/hw_GBxCartRW.py:501
+#: ../package/FlashGBX/hw_GBxCartRW.py:531
+#: ../package/FlashGBX/hw_GBxCartRW.py:776 ../package/FlashGBX/hw_JoeyJr.py:522
+msgid "Firmware version:"
+msgstr "固件版本："
+
+#: ../package/FlashGBX/hw_GBFlash.py:524
+#: ../package/FlashGBX/hw_GBxCartRW.py:525
+msgid "Available Firmware"
+msgstr "可用固件"
+
+#: ../package/FlashGBX/hw_GBFlash.py:532
+#: ../package/FlashGBX/hw_GBxCartRW.py:533
+msgid "Please choose the PCB version"
+msgstr "请选择 PCB 版本"
+
+#: ../package/FlashGBX/hw_GBFlash.py:539
+#: ../package/FlashGBX/hw_GBxCartRW.py:540
+#: ../package/FlashGBX/hw_GBxCartRW.py:804 ../package/FlashGBX/hw_JoeyJr.py:573
+msgid "Install Firmware Update"
+msgstr "安装固件更新"
+
+#: ../package/FlashGBX/hw_GBFlash.py:559
+#: ../package/FlashGBX/hw_GBxCartRW.py:560 ../package/FlashGBX/hw_JoeyJr.py:608
+msgid "Status: Ready."
+msgstr "状态：就绪。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:617
+#: ../package/FlashGBX/hw_GBxCartRW.py:629
+#: ../package/FlashGBX/hw_GBxCartRW.py:873 ../package/FlashGBX/hw_JoeyJr.py:656
+msgid ""
+"<b>Warning:</b> If you close this window while a firmware update is still "
+"running, it might leave the device in an unbootable state."
+msgstr ""
+"<b>警告：</b>如果在固件更新仍在运行时关闭此窗口，可能会导致设备处于无法启动的"
+"状态。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:617
+#: ../package/FlashGBX/hw_GBxCartRW.py:629 ../package/FlashGBX/hw_JoeyJr.py:656
+msgid "You can still recover it by running the Firmware Updater again later."
+msgstr "您可以稍后再次运行固件更新器来恢复它。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:617
+#: ../package/FlashGBX/hw_GBxCartRW.py:629
+#: ../package/FlashGBX/hw_GBxCartRW.py:873 ../package/FlashGBX/hw_JoeyJr.py:656
+msgid "Are you sure you want to close this window?"
+msgstr "您确定要关闭此窗口吗？"
+
+#: ../package/FlashGBX/hw_GBFlash.py:631
+msgid ""
+"- Unplug your GBFlash device.\n"
+"- On your GBFlash circuit board, push and hold the small button (U22) while "
+"plugging the USB cable back in.\n"
+"- If done right, the blue LED labeled “ACT” should now keep blinking twice "
+"continuously."
+msgstr ""
+"- 拔下您的 GBFlash 设备。\n"
+"- 在 GBFlash 电路板上，按住小按钮（U22）的同时重新插入 USB 数据线。\n"
+"- 如果操作正确，标有“ACT”的蓝色 LED 灯应持续闪烁两次。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:635
+#: ../package/FlashGBX/hw_GBxCartRW.py:661
+msgid "- Click OK to continue."
+msgstr "- 单击“确定”继续。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:636
+msgid ""
+"Note: Illegitimate clones of the GBFlash may have been modified to disallow "
+"firmware updates."
+msgstr "注意：GBFlash 的非法克隆品可能已被修改以禁止固件更新。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:653
+msgid "Please re-connect the USB cable now."
+msgstr "请立即重新连接 USB 数据线。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:662
+#: ../package/FlashGBX/hw_GBxCartRW.py:685 ../package/FlashGBX/hw_JoeyJr.py:756
+msgid "The firmware update has failed. Please try again."
+msgstr "固件更新失败。请重试。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:669
+#: ../package/FlashGBX/hw_GBxCartRW.py:694 ../package/FlashGBX/hw_JoeyJr.py:764
+msgid ""
+"The firmware update file is corrupted. Please re-install the application."
+msgstr "固件更新文件已损坏。请重新安装应用程序。"
+
+#: ../package/FlashGBX/hw_GBFlash.py:677
+#: ../package/FlashGBX/hw_GBxCartRW.py:704
+#: ../package/FlashGBX/hw_GBxCartRW.py:993 ../package/FlashGBX/hw_JoeyJr.py:791
+#, python-brace-format
+msgid "Status: {text}"
+msgstr "状态：{text}"
+
+#: ../package/FlashGBX/hw_GBFlash.py:680
+msgid ""
+"Your GBFlash device failed to enter the firmware update mode. This means "
+"your GBFlash may be an <b>illegitimate clone</b> that blocks certain "
+"features intentionally. If this error persists, return the device for a "
+"refund."
+msgstr ""
+"您的 GBFlash 设备未能进入固件更新模式。这意味着您的 GBFlash 可能是一个<b>非法"
+"克隆品</b>，故意阻止了某些功能。如果此错误持续存在，请退回设备以获得退款。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:72
+#, python-brace-format
+msgid ""
+"The device on port {port} couldn’t be accessed. Make sure your user account "
+"has permission to use it and it’s not already in use by another application."
+msgstr ""
+"无法访问端口 {port} 上的设备。请确保您的用户帐户有权使用它，并且它未被其他应"
+"用程序使用。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:76
+#, python-brace-format
+msgid ""
+"A critical error occured while trying to access the device on port {port}."
+msgstr "尝试访问端口 {port} 上的设备时发生严重错误。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:259
+#, python-brace-format
+msgid ""
+"{device_name} – Firmware {fw_version} ({timestamp}) on {port} at {baudrate}M "
+"baud"
+msgstr ""
+"{device_name} – 固件 {fw_version}（{timestamp}）于 {port}，波特率 {baudrate}M"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:417 ../package/FlashGBX/hw_JoeyJr.py:414
+msgid "Device not accessible."
+msgstr "设备不可访问。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:439
+#, python-brace-format
+msgid "Update failed at offset {offset}!"
+msgstr "在偏移量 {offset} 处更新失败！"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:509
+#: ../package/FlashGBX/hw_GBxCartRW.py:768
+msgid "PCB version:"
+msgstr "PCB 版本："
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:646
+msgid "Please select the PCB version of your GBxCart RW device."
+msgstr "请选择您的 GBxCart RW 设备的 PCB 版本。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:654
+#, python-brace-format
+msgid ""
+"- Disconnect the USB cable of your GBxCart RW {device_version}.\n"
+"- On the circuit board of your GBxCart RW {device_version}, press and hold "
+"down the small button while connecting the USB cable again.\n"
+"- Keep the small button held for at least 2 seconds, then let go of it.\n"
+"- If done right, the green LED labeled “{led}” should remain lit."
+msgstr ""
+"- 断开您的 GBxCart RW {device_version} 的 USB 数据线。\n"
+"- 在 GBxCart RW {device_version} 的电路板上，按住小按钮的同时重新连接 USB 数"
+"据线。\n"
+"- 按住小按钮至少 2 秒钟，然后松开。\n"
+"- 如果操作正确，标有“{led}”的绿色 LED 灯应保持常亮。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:755
+msgid "Current Device Information"
+msgstr "当前设备信息"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:760
+msgid "Device Name:"
+msgstr "设备名称："
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:788 ../package/FlashGBX/hw_JoeyJr.py:553
+msgid "Firmware Update Options"
+msgstr "固件更新选项"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:801
+msgid "External firmware file"
+msgstr "外部固件文件"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:915
+msgid "Choose GBxCart RW Firmware File"
+msgstr "选择 GBxCart RW 固件文件"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:915
+msgid "Firmware Update"
+msgstr "固件更新"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:919 ../package/FlashGBX/hw_JoeyJr.py:688
+#, python-brace-format
+msgid ""
+"The expected filename for a valid firmware file is <b>{filename_pattern}</"
+"b>. Please visit {url} for the latest official firmware updates."
+msgstr ""
+"有效固件文件的预期文件名为 <b>{filename_pattern}</b>。请访问 {url} 获取最新的"
+"官方固件更新。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:924
+msgid ""
+"Please double check that this is a valid firmware file for your GBxCart RW. "
+"If it is invalid or an update for a different device, it may render your "
+"device unusable."
+msgstr ""
+"请仔细检查这是否是您的 GBxCart RW 的有效固件文件。如果它无效或是针对不同设备"
+"的更新，可能会导致您的设备无法使用。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:927
+msgid "The following firmware will now be written to your GBxCart RW device:"
+msgstr "现在将以下固件写入您的 GBxCart RW 设备："
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:966
+msgid "Firmware checksum error."
+msgstr "固件校验和错误。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:977 ../package/FlashGBX/hw_JoeyJr.py:710
+msgid "Firmware file is too large."
+msgstr "固件文件太大。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1010
+#, python-brace-format
+msgid ""
+"Failed to update your GBxCart RW {pcb_version} ({fw_version})!\n"
+"\n"
+"The firmware update failed as the device is not responding correctly. Please "
+"ensure you use a genuine GBxCart RW, re-connect using a different USB cable "
+"and try again.\n"
+"\n"
+"⚠️ Please note that FlashGBX does not work with the “{flashboy}” series "
+"devices."
+msgstr ""
+"无法更新您的 GBxCart RW {pcb_version}（{fw_version}）！\n"
+"\n"
+"固件更新失败，因为设备没有正确响应。请确保您使用的是正品 GBxCart RW，使用不同"
+"的 USB 数据线重新连接，然后重试。\n"
+"\n"
+"⚠️ 请注意，FlashGBX 不适用于“{flashboy}”系列设备。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1018
+msgid "Waiting for bootloader..."
+msgstr "等待引导加载程序..."
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1020
+#: ../package/FlashGBX/hw_GBxCartRW.py:1049
+msgid "Bootloader error."
+msgstr "引导加载程序错误。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1030
+msgid "Device access error."
+msgstr "设备访问错误。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1047
+#, python-brace-format
+msgid "Waiting for bootloader... (+{milliseconds}ms)"
+msgstr "等待引导加载程序...（+{milliseconds} 毫秒）"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1055
+msgid "Bootloader timeout."
+msgstr "引导加载程序超时。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1062
+msgid "Reading bootloader information..."
+msgstr "正在读取引导加载程序信息..."
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1093
+msgid "Reading user data..."
+msgstr "正在读取用户数据..."
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1099
+#: ../package/FlashGBX/hw_GBxCartRW.py:1199
+msgid "Writing user data..."
+msgstr "正在写入用户数据..."
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1131
+msgid "Protocol Error. Please try again."
+msgstr "协议错误。请重试。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1150
+#, python-brace-format
+msgid "Write Error ({error_value}). Please try again."
+msgstr "写入错误（{error_value}）。请重试。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1151
+#, python-brace-format
+msgid ""
+"The firmware update was not successful (Write Error, {error_value}). Do you "
+"want to try again?\n"
+"\n"
+"If it doesn’t work even after multiple retries, please use the insideGadgets "
+"standalone firmware updater instead."
+msgstr ""
+"固件更新未成功（写入错误，{error_value}）。是否要重试？\n"
+"\n"
+"如果多次重试后仍不起作用，请改用 insideGadgets 独立固件更新器。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1163
+msgid "Verifying update..."
+msgstr "正在验证更新..."
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1182
+msgid "Verification OK."
+msgstr "验证通过。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1186
+msgid "Verification Error."
+msgstr "验证错误。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1191
+msgid ""
+"The firmware update was not successful (Verification Error). Do you want to "
+"try again?\n"
+"\n"
+"If it doesn’t work even after multiple retries, please use the insideGadgets "
+"standalone firmware updater instead."
+msgstr ""
+"固件更新未成功（验证错误）。是否要重试？\n"
+"\n"
+"如果多次重试后仍不起作用，请改用 insideGadgets 独立固件更新器。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1216
+msgid "User data update error. Please try again."
+msgstr "用户数据更新错误。请重试。"
+
+#: ../package/FlashGBX/hw_GBxCartRW.py:1227
+msgid "Restarting the device..."
+msgstr "正在重启设备..."
+
+#: ../package/FlashGBX/hw_JoeyJr.py:77
+#, python-brace-format
+msgid ""
+"Warning: Your {device_name} does not support the software-controlled voltage "
+"setting feature, so please be extra careful and always set the switch to the "
+"correct voltage before inserting a cartridge."
+msgstr ""
+"警告：您的 {device_name} 不支持软件控制的电压设置功能，因此请格外小心，并在插"
+"入卡带前务必将开关设置到正确的电压。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:316
+msgid "Connecting... This may take a moment."
+msgstr "正在连接...这可能需要一点时间。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:332
+msgid "Couldn’t communicate with the Joey Jr device."
+msgstr "无法与 Joey Jr 设备通信。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:344
+#, python-brace-format
+msgid "Couldn’t access the {mode_txt} file. Remove cartridge and try again."
+msgstr "无法访问 {mode_txt} 文件。请取出卡带并重试。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:348
+#, python-brace-format
+msgid "Couldn’t enter {update} mode. Please try again."
+msgstr "无法进入 {update} 模式。请重试。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:354 ../package/FlashGBX/hw_JoeyJr.py:360
+msgid "Couldn’t write new firmware. Please try again."
+msgstr "无法写入新固件。请重试。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:380
+msgid "Couldn’t verify. Please try again."
+msgstr "无法验证。请重试。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:412
+#, python-brace-format
+msgid "No permission to use device! See the {readme} file."
+msgstr "没有使用设备的权限！请参阅 {readme} 文件。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:417
+msgid "Unknown error while accessing the device."
+msgstr "访问设备时发生未知错误。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:421
+msgid "Identifying device..."
+msgstr "正在识别设备..."
+
+#: ../package/FlashGBX/hw_JoeyJr.py:428
+msgid "Joey Jr device not found."
+msgstr "未找到 Joey Jr 设备。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:432
+msgid "Rebooting device..."
+msgstr "正在重启设备..."
+
+#: ../package/FlashGBX/hw_JoeyJr.py:461
+#, python-brace-format
+msgid "Error! Bad response at {address}!"
+msgstr "错误！在 {address} 处收到错误响应！"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:541
+#, python-brace-format
+msgid "LK firmware version {version} by {author} (updated on {date})"
+msgstr "LK 固件版本 {version}，作者 {author}（更新于 {date}）"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:543
+msgid ""
+"For use with the FlashGBX software\n"
+"No support by BennVenn"
+msgstr ""
+"用于 FlashGBX 软件\n"
+"BennVenn 不提供支持"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:544
+#, python-brace-format
+msgid "BennVenn Drag’n’Drop firmware version {version} (updated on {date})"
+msgstr "BennVenn Drag’n’Drop 固件版本 {version}（更新于 {date}）"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:545
+msgid "For use with the Windows file explorer"
+msgstr "用于 Windows 文件资源管理器"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:546
+#, python-brace-format
+msgid "BennVenn JoeyGUI firmware version {version} (updated on {date})"
+msgstr "BennVenn JoeyGUI 固件版本 {version}（更新于 {date}）"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:547
+msgid "For use with the JoeyGUI software"
+msgstr "用于 JoeyGUI 软件"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:549
+msgid "Error"
+msgstr "错误"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:570
+msgid "External FIRMWARE.JR file"
+msgstr "外部 FIRMWARE.JR 文件"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:582
+msgid "Please note that FlashGBX is not officially supported by BennVenn."
+msgstr "请注意，FlashGBX 不受 BennVenn 官方支持。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:685
+msgid "Choose Joey Jr Firmware File"
+msgstr "选择 Joey Jr 固件文件"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:685
+#, python-brace-format
+msgid "Firmware Update ({firmware_jr})"
+msgstr "固件更新（{firmware_jr}）"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:692
+#, python-brace-format
+msgid ""
+"The selected file can not be used. Please visit {url} for the latest "
+"official firmware updates."
+msgstr "所选文件无法使用。请访问 {url} 获取最新的官方固件更新。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:704
+msgid "Detected firmware string:"
+msgstr "检测到的固件字符串："
+
+#: ../package/FlashGBX/hw_JoeyJr.py:705
+msgid "JoeyN64 Firmware found"
+msgstr "发现 JoeyN64 固件"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:706
+msgid "Jr4Gen3 Firmware found"
+msgstr "发现 Jr4Gen3 固件"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:712
+#, python-brace-format
+msgid ""
+"Warning: The selected firmware file couldn’t be confirmed to be valid "
+"automatically ({error}). Please double check that this is a valid firmware "
+"file for your Joey Jr. If it is invalid or an update for a different device, "
+"it may render your device unusable."
+msgstr ""
+"警告：无法自动确认所选固件文件有效（{error}）。请仔细检查这是否是您的 Joey "
+"Jr 的有效固件文件。如果它无效或是针对不同设备的更新，可能会导致您的设备无法使"
+"用。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:717
+msgid "The firmware update file is corrupted or invalid."
+msgstr "固件更新文件已损坏或无效。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:724
+msgid "The following firmware will now be written to your Joey Jr device:"
+msgstr "现在将以下固件写入您的 Joey Jr 设备："
+
+#: ../package/FlashGBX/hw_JoeyJr.py:746
+#, python-brace-format
+msgid ""
+"Please note that you need to manually copy over the {romlist} file. You can "
+"find the latest version of it on the Joey Jr website."
+msgstr ""
+"请注意，您需要手动复制 {romlist} 文件。您可以在 Joey Jr 网站上找到它的最新版"
+"本。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:774
+msgid ""
+"If your Joey Jr device is currently running the Drag’n’Drop firmware, please "
+"update the firmware on Windows or Linux, or use the standalone firmware "
+"updater."
+msgstr ""
+"如果您的 Joey Jr 设备当前正在运行 Drag’n’Drop 固件，请在 Windows 或 Linux 上"
+"更新固件，或使用独立固件更新器。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:778
+#, python-brace-format
+msgid ""
+"If your Joey Jr device is currently running the Drag’n’Drop firmware, please "
+"select the <b>{mode_txt}</b> (or <b>{mode_txt_2}</b>) file that is stored on "
+"the device."
+msgstr ""
+"如果您的 Joey Jr 设备当前正在运行 Drag’n’Drop 固件，请选择存储在设备上的"
+"<b>{mode_txt}</b>（或 <b>{mode_txt_2}</b>）文件。"
+
+#: ../package/FlashGBX/hw_JoeyJr.py:783
+#, python-brace-format
+msgid "Choose the {mode_txt} file of your Joey Jr removable drive"
+msgstr "选择您的 Joey Jr 可移动驱动器上的 {mode_txt} 文件"

@@ -1,0 +1,69 @@
+{
+	"type":"DMG",
+	"names":[
+		"SD007_BV5_V3 with AM29LV160MB",
+		"SD007_TSOP_48BALL with L160DB12VI",
+		"SD007_TSOP_48BALL with AM29LV160DB",
+		"2006_TSOP_64BALL_QFP48 with AL016J55FFAR2",
+		"SD007_TSOP_64BALL_SOP28 with unlabeled flash chip",
+		"SD007_TSOP_29LV017D with L017D70VC",
+		"SD007_TSOP_48BALL with AM29LV160DT",
+		"SD007_TSOP_64BALL_SOJ28 with unlabeled flash chip"
+	],
+	"flash_ids":[
+		[ 0x02, 0x02, 0x4A, 0x4A ],
+		[ 0x02, 0x02, 0x4A, 0x4A ],
+		[ 0x02, 0x02, 0x4A, 0x4A ],
+		[ 0x02, 0x02, 0x4A, 0x4A ],
+		[ 0x02, 0x02, 0x4A, 0x4A ],
+		[ 0x02, 0xC8, 0x00, 0x00 ],
+		[ 0x02, 0x02, 0xC4, 0xC4 ],
+		[ 0x02, 0x02, 0x4A, 0x4A ]
+	],
+	"voltage":3.3,
+	"voltage_variants":true,
+	"flash_size":0x200000,
+	"start_addr":0,
+	"first_bank":1,
+	"write_pin":"WR",
+	"chip_erase_timeout":70,
+	"command_set":"AMD",
+	"commands":{
+		"reset":[
+			[ 0, 0xF0 ]
+		],
+		"read_identifier":[
+			[ 0xAAA, 0xA9 ],
+			[ 0x555, 0x56 ],
+			[ 0xAAA, 0x90 ]
+		],
+		"chip_erase":[
+			[ 0xAAA, 0xA9 ],
+			[ 0x555, 0x56 ],
+			[ 0xAAA, 0x80 ],
+			[ 0xAAA, 0xA9 ],
+			[ 0x555, 0x56 ],
+			[ 0xAAA, 0x10 ]
+		],
+		"chip_erase_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ 0, 0xFF, 0xFF ]
+		],
+		"single_write":[
+			[ 0xAAA, 0xA9 ],
+			[ 0x555, 0x56 ],
+			[ 0xAAA, 0xA0 ],
+			[ "PA", "PD" ]
+		],
+		"single_write_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ]
+		]
+	}
+}

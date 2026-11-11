@@ -1,0 +1,58 @@
+{
+	"type":"DMG",
+	"names":[
+		"SD008-6810-V4 with MX29GL256EL"
+	],
+	"flash_ids":[
+		[ 0xF3, 0xC3, 0x00, 0x01 ],
+		[ 0x8A, 0x8A, 0x00, 0x00 ]
+	],
+	"voltage":3.3,
+	"voltage_variants":true,
+	"flash_size":0x2000000,
+	"start_addr":0,
+	"first_bank":1,
+	"chip_erase_timeout":120,
+	"reset_every":0x800000,
+	"mbc":0x201,
+	"write_pin":"WR",
+	"command_set":"AMD",
+	"commands":{
+		"reset":[
+			[ 0, 0xF0 ]
+		],
+		"read_identifier":[
+			[ 0xAAA, 0xA9 ],
+			[ 0x555, 0x56 ],
+			[ 0xAAA, 0x90 ]
+		],
+		"chip_erase":[
+			[ 0xAAA, 0xA9 ],
+			[ 0x555, 0x56 ],
+			[ 0xAAA, 0x80 ],
+			[ 0xAAA, 0xA9 ],
+			[ 0x555, 0x56 ],
+			[ 0xAAA, 0x10 ]
+		],
+		"chip_erase_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ 0, 0xFF, 0xFF ]
+		],
+		"single_write":[
+			[ 0xAAA, 0xA9 ],
+			[ 0x555, 0x56 ],
+			[ 0xAAA, 0xA0 ],
+			[ "PA", "PD" ]
+		],
+		"single_write_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ]
+		]
+	}
+}

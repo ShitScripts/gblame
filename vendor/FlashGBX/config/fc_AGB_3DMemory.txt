@@ -1,0 +1,10 @@
+{
+	"type":"AGB",
+	"names":[
+		"3D Memory Cartridge (GBA Video)"
+	],
+	"voltage":3.3,
+	"3d_memory":true,
+	"command_set":"3DMEMORY",
+	"commands":{}
+}

@@ -1,0 +1,57 @@
+{
+	"type":"AGB",
+	"names":[
+		"BX2006_TSOPBGA_0106 with K8D6316UTM-PI07"
+	],
+	"flash_ids":[
+		[ 0xEC, 0x00, 0xE0, 0x22 ]
+	],
+	"voltage":3.3,
+	"flash_size":0x800000,
+	"sector_size":[
+		[0x10000, 127],
+		[0x2000, 8]
+	],
+	"command_set":"AMD",
+	"commands":{
+		"reset":[
+			[ 0, 0xF0 ]
+		],
+		"read_identifier":[
+			[ 0xAAA, 0xA9 ],
+			[ 0x555, 0x56 ],
+			[ 0xAAA, 0x90 ]
+		],
+		"read_cfi":[
+			[ 0xAA, 0x98 ]
+		],
+		"sector_erase":[
+			[ 0xAAA, 0xA9 ],
+			[ 0x555, 0x56 ],
+			[ 0xAAA, 0x80 ],
+			[ 0xAAA, 0xA9 ],
+			[ 0x555, 0x56 ],
+			[ "SA", 0x30 ]
+		],
+		"sector_erase_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ "SA", 0xFFFF, 0xFFFF ]
+		],
+		"single_write":[
+			[ 0xAAA, 0xA9 ],
+			[ 0x555, 0x56 ],
+			[ 0xAAA, 0xA0 ],
+			[ "PA", "PD" ]
+		],
+		"single_write_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ]
+		]
+	}
+}

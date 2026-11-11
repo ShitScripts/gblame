@@ -1,0 +1,89 @@
+{
+	"type":"AGB",
+	"names":[
+		"MXP54_16D_ERATH with MSP54LV256"
+	],
+	"flash_ids":[
+		[ 0x02, 0x00, 0xBD, 0x22 ]
+	],
+	"voltage":3.3,
+	"flash_size":0x2000000,
+	"sector_size_from_cfi":true,
+	"status_register_mask":0x40,
+	"status_register_value":0x40,
+	"chip_erase_timeout":300,
+	"command_set":"AMD",
+	"commands":{
+		"reset":[
+			[ 0, 0xF0 ]
+		],
+		"read_identifier":[
+			[ 0xAAA, 0x69 ],
+			[ 0x555, 0x96 ],
+			[ 0xAAA, 0x50 ]
+		],
+		"read_cfi":[
+			[ 0xAA, 0x58 ]
+		],
+		"sector_erase":[
+			[ 0xAAA, 0x69 ],
+			[ 0x555, 0x96 ],
+			[ 0xAAA, 0x40 ],
+			[ 0xAAA, 0x69 ],
+			[ 0x555, 0x96 ],
+			[ "SA", 0x30 ]
+		],
+		"sector_erase_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ "SA", 0xFFFF, 0xFFFF ]
+		],
+		"chip_erase":[
+			[ 0xAAA, 0x69 ],
+			[ 0x555, 0x96 ],
+			[ 0xAAA, 0x40 ],
+			[ 0xAAA, 0x69 ],
+			[ 0x555, 0x96 ],
+			[ 0xAAA, 0x10 ]
+		],
+		"chip_erase_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ 0, 0xFFFF, 0xFFFF ]
+		],
+		"buffer_write":[
+			[ 0xAAA, 0x69 ],
+			[ 0x555, 0x96 ],
+			[ "SA", 0x26 ],
+			[ "SA", "BS" ],
+			[ "PA", "PD" ],
+			[ "SA", 0x2A ]
+		],
+		"buffer_write_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ "SA", "PD", 0xFFFF ]
+		],
+		"single_write":[
+			[ 0xAAA, 0x69 ],
+			[ 0x555, 0x96 ],
+			[ 0xAAA, 0x60 ],
+			[ "PA", "PD" ]
+		],
+		"single_write_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ]
+		]
+	}
+}

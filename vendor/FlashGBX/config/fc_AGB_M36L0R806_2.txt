@@ -1,0 +1,66 @@
+{
+	"type":"AGB",
+	"names":[
+		"M36XXX_32A_EARTH with M36L0R8060B",
+		"M36XXX_32A_EARTH with M36L0R8060T"
+	],
+	"flash_ids":[
+		[ 0x20, 0x00, 0x0D, 0x88 ],
+		[ 0x20, 0x00, 0x0E, 0x88 ]
+	],
+	"voltage":3.3,
+	"flash_size":0x2000000,
+	"sector_size_from_cfi":true,
+	"reset_every":0x100000,
+	"status_register_mask":0x40,
+	"status_register_value":0x40,
+	"command_set":"INTEL",
+	"commands":{
+		"reset":[
+			[ 0, 0x50 ],
+			[ 0, 0xFF ]
+		],
+		"read_identifier":[
+			[ 0, 0x50 ]
+		],
+		"read_cfi":[
+			[ 0xAA, 0x58 ]
+		],
+		"sector_erase":[
+			[ "SA", 0xA0 ],
+			[ "SA", 0xD0 ],
+			[ "SA", 0x20 ],
+			[ "SA", 0xD0 ]
+		],
+		"sector_erase_wait_for":[
+			[ null, null, null ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ "SA", 0x40, 0x40 ]
+		],
+		"buffer_write":[
+			[ "SA", 0xE8 ],
+			[ "SA", "BS" ],
+			[ "PA", "PD" ],
+			[ "SA", 0xD0 ],
+			[ "SA", 0xFF ]
+		],
+		"buffer_write_wait_for":[
+			[ "SA", 0x40, 0x40 ],
+			[ null, null, null ],
+			[ null, null, null ],
+			[ "SA", 0x40, 0x40 ],
+			[ null, null, null ]
+		],
+		"single_write":[
+			[ 0, 0xB0 ],
+			[ 0, 0x10 ],
+			[ "PA", "PD" ]
+		],
+		"single_write_wait_for":[
+			[ 0, 0x40, 0x40 ],
+			[ null, null, null ],
+			[ null, null, null ]
+		]
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"type":"DMG",
+	"names":[
+		"insideGadgets Power Cart 1 MiB, 128 KiB SRAM"
+	],
+	"voltage":5,
+	"write_pin":"",
+	"command_set":"",
+	"commands":{}
+}
