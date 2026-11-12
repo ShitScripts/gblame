@@ -259,8 +259,9 @@ class MainWindow(QMainWindow):
         row.addWidget(self.btn_dump_save)
         layout.addLayout(row)
 
-        self.btn_write_save = QPushButton("Write emulator save to cart...")
+        self.btn_write_save = QPushButton("Write save to cart...")
         self.btn_write_save.setObjectName("Danger")
+        self.btn_write_save.setToolTip("Choose any save file and write it to the cartridge")
         self.btn_write_save.setEnabled(False)
         self.btn_write_save.clicked.connect(self._write_save)
         layout.addWidget(self.btn_write_save)
@@ -411,8 +412,8 @@ class MainWindow(QMainWindow):
         self.btn_dump_play.setEnabled(ok)
         self.btn_dump_rom.setEnabled(ok)
         self.btn_dump_save.setEnabled(ok)
+        self.btn_write_save.setEnabled(ok)
         have_game = self.current_game is not None and not busy
-        self.btn_write_save.setEnabled(bool(have_game and self.current_game.has_emu_save()))
         self.btn_play.setEnabled(bool(have_game and self.current_game.rom_path))
         self.btn_refresh_dump.setEnabled(bool(have_game and connected))
         if not connected:
@@ -510,20 +511,26 @@ class MainWindow(QMainWindow):
         self._dump(rom=True, save=True)
 
     def _write_save(self):
+        if self.device.busy:
+            return
         game = self.current_game or self._selected_game()
-        if game is None or not game.has_emu_save():
+        start_dir = game.folder if game else self.library.root
+        path, _ = QFileDialog.getOpenFileName(
+            self, "Select a save file to write to the cartridge",
+            start_dir,
+            "Save files (*.sav *.srm *.flash *.dat);;All files (*)")
+        if not path:
             return
         answer = QMessageBox.warning(
             self, "Write save to cartridge",
-            "This OVERWRITES the save data on the cartridge with your emulator "
-            "save:\n\n{}\n\nThe cart's current save was backed up to cart.sav "
-            "when it was dumped. Continue?".format(game.emu_sav_path),
+            "This OVERWRITES the save data currently on the cartridge with the "
+            "file you chose:\n\n{}\n\nContinue?".format(path),
             QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
         if answer != QMessageBox.Yes:
             return
         self._set_busy(True)
         self._set_status("Writing save to cartridge...", "busy")
-        self.device.write_save(game.emu_sav_path)
+        self.device.write_save(path)
 
     # ---------- library panel ----------
 

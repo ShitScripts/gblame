@@ -80,10 +80,6 @@ class Game:
             return True
         return False
 
-    def has_emu_save(self):
-        p = self.emu_sav_path
-        return os.path.exists(p) and os.path.getsize(p) > 0
-
 
 class Library:
     def __init__(self, settings):

@@ -15,9 +15,9 @@ apps: one thing at a time, big buttons, no walls of settings.
 - **Dump ROM** — backs up the cartridge to a `.gb` / `.gbc` / `.gba` file, with
   an automatic No-Intro style filename when the ROM is recognized.
 - **Dump save** — copies the save RAM off the cartridge.
-- **Write save** — restores a `.sav` from your PC/emulator back to the
-  cartridge, only via an explicit button. The cartridge save is never modified
-  implicitly.
+- **Write save** — pick any save file (`.sav`, `.srm`, `.flash`, `.dat`) from
+  your PC and write it back to the cartridge, only via an explicit button and a
+  file selector. The cartridge save is never modified implicitly.
 - **Instant playback** — play your dumped ROMs right away with the bundled
   mGBA emulator (v0.10.5, MPL-2.0). Using your own mGBA executable is optional
   (Settings → mGBA executable); the bundled one is the default.
